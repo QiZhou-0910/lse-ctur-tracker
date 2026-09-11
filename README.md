@@ -1,4 +1,4 @@
-# LSE-CTUR Collaboration Tracker
+# MTUS+ Project: UCL_LSE Coordination Tracker
 
 A live-updating website tracking the country-year harmonisation and data-acquisition
 progress of the MTUS+ project, split between the LSE and CTUR teams.
