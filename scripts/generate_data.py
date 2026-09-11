@@ -91,6 +91,30 @@ CATEGORY_TO_STATUS = {
     'Allocated, not started': 'assigned',
     'Not allocated': 'not_started',
 }
+STATUS_TO_CATEGORY = {v: k for k, v in CATEGORY_TO_STATUS.items()}
+STATUS_RANK = {'done': 0, 'in_progress': 1, 'assigned': 2, 'not_started': 3}
+
+# Cross-checked against CTUR's weekly work-planning "Calendar" tab in
+# MTUS_tracker.xlsx (a second, independent source from the same file as the
+# "Tracker" sheet above), confirmed with the team on 2026-09-11. Unlike the
+# Tracker-sheet cross-check above, this can set BOTH teams' status on one
+# row -- e.g. LSE already cleaned a survey that CTUR is now separately
+# re-checking. Only entries the team actually confirmed are listed here;
+# other ambiguous colours seen on the Calendar tab were left untouched.
+CALENDAR_OVERRIDE = {
+    (norm('Tanzania'), 2014): dict(
+        ctur_status='done',
+        note="Calendar tab (MTUS_tracker.xlsx): Tanzania 2014 confirmed done by the team."),
+    (norm('Mongolia'), 2019): dict(
+        ctur_status='in_progress',
+        note="Calendar tab (MTUS_tracker.xlsx): CTUR (Sizhan) is currently re-checking this survey, independently of LSE's own completed pass."),
+    (norm('United Kingdom'), 2014): dict(
+        ctur_status='in_progress',
+        note="Calendar tab (MTUS_tracker.xlsx): CTUR (Qi) is currently re-checking this survey, independently of LSE's own completed pass."),
+    (norm('United Kingdom'), 2000): dict(
+        ctur_status='in_progress',
+        note="Calendar tab (MTUS_tracker.xlsx): CTUR (Qi) has started active work on this survey, ahead of the master tracker's 'not cleaned' phase."),
+}
 
 list1 = []
 for r in mgmt_rows:
@@ -119,6 +143,18 @@ for r in mgmt_rows:
         ctur_status, lse_status = status, 'not_started'
     else:
         ctur_status = lse_status = 'not_started'
+
+    cal = CALENDAR_OVERRIDE.get((norm(r['country']), r['year']))
+    if cal:
+        if 'ctur_status' in cal:
+            ctur_status = cal['ctur_status']
+        if 'lse_status' in cal:
+            lse_status = cal['lse_status']
+        crosscheck = cal['note'] if not crosscheck else f"{crosscheck} | {cal['note']}"
+        # The row's overall category (used by the map and the Overview
+        # dashboard) follows whichever of the two team statuses is furthest
+        # along, so a Calendar-tab correction is reflected there too.
+        category = STATUS_TO_CATEGORY[min(ctur_status, lse_status, key=STATUS_RANK.get)]
 
     list1.append(dict(country=r['country'], code=r['code'], year=r['year'],
                        category=category, ctur_status=ctur_status, lse_status=lse_status,

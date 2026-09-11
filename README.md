@@ -31,6 +31,7 @@ is published here):
 | `data_acquisition.xlsx` | LSE/CTUR shared | Microdata acquisition status across the HETUS rounds and non-HETUS country-waves, with free-text notes on each contact's reply. Used to fill in detail `data_management.xlsx` doesn't have. |
 | `nso_contact_tracking.xlsx` | LSE | Outreach log: mail dates and reply status for specific National Statistics Office contacts. |
 | `MTUS_tracker.xlsx` ("Tracker" sheet) | CTUR | CTUR's own country-year harmonisation tracker — assignee and status, cross-checked against `data_management.xlsx`. |
+| `MTUS_tracker.xlsx` ("Calendar" sheet) | CTUR | CTUR's weekly work-planning calendar, colour-coded by status (Done / Ongoing / Needs Peer Check / Interrupted). Used only as a source of individually team-confirmed status corrections for specific rows — see `CALENDAR_OVERRIDE` below. |
 
 ## Why the update runs locally, not as a GitHub Action
 
@@ -84,6 +85,14 @@ names an assignee, the row is counted as CTUR's.
 If CTUR's Tracker sheet records a *different* status than `data_management.xlsx`'s
 `phase` for the same row, that's shown as a "cross-check note" rather than silently
 picking one file over the other.
+
+**Calendar-tab corrections:** a small, explicitly named `CALENDAR_OVERRIDE` dictionary
+in `scripts/generate_data.py` sets one or both team statuses directly for specific
+rows the team has confirmed against the Calendar sheet's colour-coding — unlike the
+Tracker-sheet cross-check above, this can mark *both* teams' progress independently on
+one row (e.g. LSE already finished a survey that CTUR is now separately re-checking).
+Only rows the team has actually confirmed are listed there; every other colour on the
+Calendar tab is left alone.
 
 ### List 2 — Data Requests
 

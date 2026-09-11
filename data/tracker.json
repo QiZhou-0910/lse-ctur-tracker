@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T21:45:14.601512+00:00",
+  "generated_at": "2026-09-11T22:41:28.077767+00:00",
   "list1": [
     {
       "country": "Albania",
@@ -1062,11 +1062,11 @@
       "code": "MNG",
       "year": 2019,
       "category": "Done",
-      "ctur_status": "not_started",
+      "ctur_status": "in_progress",
       "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
-      "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase. | Calendar tab (MTUS_tracker.xlsx): CTUR (Sizhan) is currently re-checking this survey, independently of LSE's own completed pass."
     },
     {
       "country": "Morocco",
@@ -1622,12 +1622,12 @@
       "country": "Tanzania",
       "code": "TZA",
       "year": 2014,
-      "category": "Being processed",
-      "ctur_status": "in_progress",
+      "category": "Done",
+      "ctur_status": "done",
       "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
-      "crosscheck_note": null
+      "crosscheck_note": "Calendar tab (MTUS_tracker.xlsx): Tanzania 2014 confirmed done by the team."
     },
     {
       "country": "Tanzania",
@@ -1710,23 +1710,23 @@
       "country": "United Kingdom",
       "code": "GBR",
       "year": 2000,
-      "category": "Allocated, not started",
-      "ctur_status": "assigned",
+      "category": "Being processed",
+      "ctur_status": "in_progress",
       "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
-      "crosscheck_note": null
+      "crosscheck_note": "Calendar tab (MTUS_tracker.xlsx): CTUR (Qi) has started active work on this survey, ahead of the master tracker's 'not cleaned' phase."
     },
     {
       "country": "United Kingdom",
       "code": "GBR",
       "year": 2014,
       "category": "Done",
-      "ctur_status": "not_started",
+      "ctur_status": "in_progress",
       "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
-      "crosscheck_note": null
+      "crosscheck_note": "Calendar tab (MTUS_tracker.xlsx): CTUR (Qi) is currently re-checking this survey, independently of LSE's own completed pass."
     },
     {
       "country": "United Kingdom",
