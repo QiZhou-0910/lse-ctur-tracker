@@ -160,6 +160,50 @@ for r in mgmt_rows:
                        category=category, ctur_status=ctur_status, lse_status=lse_status,
                        source_phase=phase, source=r['source'], crosscheck_note=crosscheck))
 
+
+def merge_duplicate_country_years(rows):
+    """data_management.xlsx sometimes has two separate rows for the same
+    country-year (one logged by each team, e.g. LSE marks it 'cleaned' while
+    CTUR separately has it as 'cleaning in progress'). Collapse those into a
+    single row per (country, year), taking each team's best (most advanced)
+    status across its duplicate rows, so the site shows one row per survey."""
+    groups = {}
+    order = []
+    for r in rows:
+        key = (r['country'], r['year'])
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(r)
+
+    def uniq_join(values):
+        seen = []
+        for v in values:
+            if v and v not in seen:
+                seen.append(v)
+        return '; '.join(seen) if seen else None
+
+    merged = []
+    for key in order:
+        group = groups[key]
+        if len(group) == 1:
+            merged.append(group[0])
+            continue
+        ctur_status = min((g['ctur_status'] for g in group), key=STATUS_RANK.get)
+        lse_status = min((g['lse_status'] for g in group), key=STATUS_RANK.get)
+        category = STATUS_TO_CATEGORY[min(ctur_status, lse_status, key=STATUS_RANK.get)]
+        merged.append(dict(
+            country=group[0]['country'], code=group[0]['code'], year=group[0]['year'],
+            category=category, ctur_status=ctur_status, lse_status=lse_status,
+            source_phase=uniq_join(g['source_phase'] for g in group),
+            source=uniq_join(g['source'] for g in group),
+            crosscheck_note=uniq_join(g['crosscheck_note'] for g in group),
+        ))
+    return merged
+
+
+list1 = merge_duplicate_country_years(list1)
+
 # ================= LIST 2 =================
 list2 = []
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T22:41:28.077767+00:00",
+  "generated_at": "2026-09-11T23:27:22.858446+00:00",
   "list1": [
     {
       "country": "Albania",
@@ -149,21 +149,10 @@
       "code": "BEL",
       "year": 2013,
       "category": "Done",
-      "ctur_status": "not_started",
-      "lse_status": "done",
-      "source_phase": "cleaned",
-      "source": "HETUS-preharmonized",
-      "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
-    },
-    {
-      "country": "Belgium",
-      "code": "BEL",
-      "year": 2013,
-      "category": "Being processed",
       "ctur_status": "in_progress",
-      "lse_status": "not_started",
-      "source_phase": "cleaning in progress/ctur",
-      "source": "CTUR",
+      "lse_status": "done",
+      "source_phase": "cleaned; cleaning in progress/ctur",
+      "source": "HETUS-preharmonized; CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
     },
     {
@@ -303,21 +292,10 @@
       "code": "CAN",
       "year": 2022,
       "category": "Done",
-      "ctur_status": "not_started",
-      "lse_status": "done",
-      "source_phase": "cleaned",
-      "source": "CTUR",
-      "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
-    },
-    {
-      "country": "Canada",
-      "code": "CAN",
-      "year": 2022,
-      "category": "Being processed",
       "ctur_status": "in_progress",
-      "lse_status": "not_started",
-      "source_phase": "in progress",
-      "source": null,
+      "lse_status": "done",
+      "source_phase": "cleaned; in progress",
+      "source": "CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
     },
     {
@@ -665,22 +643,11 @@
       "country": "Greece",
       "code": "GRC",
       "year": 2013,
-      "category": "Being processed",
-      "ctur_status": "in_progress",
-      "lse_status": "not_started",
-      "source_phase": "cleaning in progress/ctur",
-      "source": "HETUS",
-      "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
-    },
-    {
-      "country": "Greece",
-      "code": "GRC",
-      "year": 2013,
       "category": "Done",
-      "ctur_status": "not_started",
+      "ctur_status": "in_progress",
       "lse_status": "done",
-      "source_phase": "cleaned",
-      "source": "HETUS-preharmonized",
+      "source_phase": "cleaning in progress/ctur; cleaned",
+      "source": "HETUS; HETUS-preharmonized",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
     },
     {
@@ -775,22 +742,11 @@
       "country": "Hungary",
       "code": "HUN",
       "year": 2009,
-      "category": "Being processed",
-      "ctur_status": "in_progress",
-      "lse_status": "not_started",
-      "source_phase": "cleaning in progress/ctur",
-      "source": "HETUS",
-      "crosscheck_note": null
-    },
-    {
-      "country": "Hungary",
-      "code": "HUN",
-      "year": 2009,
       "category": "Done",
-      "ctur_status": "not_started",
+      "ctur_status": "in_progress",
       "lse_status": "done",
-      "source_phase": "cleaned",
-      "source": "HETUS-preharmonized",
+      "source_phase": "cleaning in progress/ctur; cleaned",
+      "source": "HETUS; HETUS-preharmonized",
       "crosscheck_note": null
     },
     {
@@ -1039,22 +995,11 @@
       "country": "Mongolia",
       "code": "MNG",
       "year": 2015,
-      "category": "Allocated, not started",
-      "ctur_status": "assigned",
-      "lse_status": "not_started",
-      "source_phase": "data in dbox, not cleaned",
-      "source": "HER-CTUR",
-      "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
-    },
-    {
-      "country": "Mongolia",
-      "code": "MNG",
-      "year": 2015,
       "category": "Being processed",
       "ctur_status": "in_progress",
       "lse_status": "not_started",
-      "source_phase": "cleaning in progress/ctur",
-      "source": null,
+      "source_phase": "data in dbox, not cleaned; cleaning in progress/ctur",
+      "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
     },
     {

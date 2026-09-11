@@ -94,6 +94,12 @@ one row (e.g. LSE already finished a survey that CTUR is now separately re-check
 Only rows the team has actually confirmed are listed there; every other colour on the
 Calendar tab is left alone.
 
+**Duplicate country-years:** `data_management.xlsx` occasionally logs the same
+country-year twice — once from each team (e.g. LSE marks a survey "cleaned" while a
+separate row shows CTUR's own "cleaning in progress"). These are merged into a single
+row per country-year, taking each team's *best* (most advanced) status across its
+duplicate rows, so the site never shows two rows for the same survey.
+
 ### List 2 — Data Requests
 
 Every row starts from the same `phase` column, restricted to the "no access yet"
