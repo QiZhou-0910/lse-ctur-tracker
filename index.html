@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LSE-CTUR Collaboration Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.32.0/plotly.min.js"></script>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --text:#1a1d23; --muted:#5b6270; --border:#e3e6ea;
+    --accent:#1f4e78;
+    --c1:#2e7d32; --c2:#f2b705; --c3:#5b9bd5; --c4:#bdbdbd;
+    --c5:#66bb6a; --c6:#4fc3f7; --c7:#ff9e40; --c8:#ef6c53; --c9:#dcdfe3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14171c; --panel:#1c2027; --text:#e7e9ec; --muted:#98a0ad; --border:#2b303a; }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;}
+  header{padding:22px 28px;border-bottom:1px solid var(--border);background:var(--panel);}
+  header h1{margin:0 0 4px;font-size:1.5rem;}
+  header p{margin:0;color:var(--muted);font-size:.9rem;}
+  main{max-width:1200px;margin:0 auto;padding:24px 20px 60px;}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:26px;}
+  .panel h2{margin-top:0;font-size:1.15rem;}
+  #map{width:100%;height:520px;}
+  .legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px;font-size:.82rem;color:var(--muted);}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .swatch{width:12px;height:12px;border-radius:3px;display:inline-block;}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
+  .controls input, .controls select{
+    padding:7px 10px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);font-size:.85rem;
+  }
+  .controls input{flex:1;min-width:180px;}
+  table{width:100%;border-collapse:collapse;font-size:.82rem;}
+  th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--border);vertical-align:top;}
+  th{position:sticky;top:0;background:var(--panel);cursor:pointer;white-space:nowrap;color:var(--muted);font-weight:600;}
+  tbody tr:hover{background:rgba(127,127,127,.08);}
+  .tablewrap{max-height:560px;overflow:auto;border:1px solid var(--border);border-radius:8px;}
+  .badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600;color:#12151a;white-space:nowrap;}
+  .count{color:var(--muted);font-size:.82rem;margin-left:8px;font-weight:normal;}
+  .muted{color:var(--muted);}
+  footer{max-width:1200px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:.8rem;}
+  a{color:var(--accent);}
+</style>
+</head>
+<body>
+<header>
+  <h1>LSE-CTUR Collaboration Tracker</h1>
+  <p>Country-year harmonisation and data-request progress for the MTUS+ project. Last updated: <span id="updated">loading...</span> (refreshed every 12 hours from the team's tracking spreadsheets).</p>
+</header>
+<main>
+
+  <section class="panel">
+    <h2>Overall progress by country</h2>
+    <div id="map"></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section class="panel">
+    <h2>List 1 &mdash; Data In Hand <span class="count" id="count1"></span></h2>
+    <p class="muted">Every country-year survey the team already has some form of access to.</p>
+    <div class="controls">
+      <input type="text" id="search1" placeholder="Search country, team, person...">
+      <select id="filterCat1"><option value="">All statuses</option></select>
+      <select id="filterTeam1"><option value="">All teams</option></select>
+    </div>
+    <div class="tablewrap">
+      <table id="table1">
+        <thead><tr>
+          <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
+          <th data-k="survey_type">Survey type</th><th data-k="category">Status</th>
+          <th data-k="team">Team</th><th data-k="person">Person</th><th data-k="crosscheck_note">Cross-check note</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>List 2 &mdash; Data Requests <span class="count" id="count2"></span></h2>
+    <p class="muted">Every country-year survey the team does not yet have access to, and the state of the request for it.</p>
+    <div class="controls">
+      <input type="text" id="search2" placeholder="Search country, notes...">
+      <select id="filterCat2"><option value="">All statuses</option></select>
+      <select id="filterTeam2"><option value="">All teams</option></select>
+    </div>
+    <div class="tablewrap">
+      <table id="table2">
+        <thead><tr>
+          <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
+          <th data-k="wave">Wave</th><th data-k="category">Status</th>
+          <th data-k="team">Team pursuing</th><th data-k="note">Notes</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Unclear &mdash; needs input <span class="count" id="count3"></span></h2>
+    <p class="muted">Rows where the source spreadsheets gave no confident status; left blank rather than guessed.</p>
+    <div class="tablewrap">
+      <table id="table3">
+        <thead><tr><th>Country</th><th>ISO3</th><th>Year</th><th>Issue</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+<footer>
+  Data sources: data_management.xlsx, data_acquisition.xlsx, nso_contact_tracking.xlsx (Dropbox), MTUS_tracker.xlsx (OneDrive, CTUR team).
+  See the <a href="https://github.com/qtnvqz3/lse-ctur-tracker" target="_blank" rel="noopener">repository</a> for the generation script and full methodology notes.
+</footer>
+
+<script>
+const CAT_COLOR = {
+  'Done': '#2e7d32',
+  'Being processed': '#f2b705',
+  'Allocated, not started': '#5b9bd5',
+  'Not allocated': '#bdbdbd',
+  'Data received, not yet in shared folder': '#66bb6a',
+  'Dataset agreed, not received': '#4fc3f7',
+  'Request sent, still in discussion': '#ff9e40',
+  'Request sent, no response yet': '#ef6c53',
+  'Request not sent yet': '#dcdfe3',
+};
+const RANK_ORDER = ['Done','Being processed','Allocated, not started','Not allocated',
+  'Data received, not yet in shared folder','Dataset agreed, not received',
+  'Request sent, still in discussion','Request sent, no response yet','Request not sent yet'];
+
+function esc(s){ return (s===null||s===undefined) ? '' : String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function badge(cat){
+  const c = CAT_COLOR[cat] || '#ccc';
+  return `<span class="badge" style="background:${c}">${esc(cat||'')}</span>`;
+}
+
+function buildLegend(){
+  const el = document.getElementById('legend');
+  el.innerHTML = RANK_ORDER.map(c=>`<span><span class="swatch" style="background:${CAT_COLOR[c]}"></span>${c}</span>`).join('');
+}
+
+function drawMap(mapData){
+  const codes = mapData.map(d=>d.code);
+  const ranks = mapData.map(d=>d.rank);
+  const text = mapData.map(d=>`${d.country}<br>${d.category}`);
+  const maxRank = 9;
+  const stops = [];
+  RANK_ORDER.forEach((cat,i)=>{
+    const r = i+1;
+    const lo = (r-1)/maxRank, hi = r/maxRank;
+    stops.push([lo, CAT_COLOR[cat]], [hi, CAT_COLOR[cat]]);
+  });
+  const data = [{
+    type: 'choropleth',
+    locationmode: 'ISO-3',
+    locations: codes,
+    z: ranks,
+    text: text,
+    hovertemplate: '%{text}<extra></extra>',
+    colorscale: stops,
+    zmin: 1, zmax: 9,
+    showscale: false,
+    marker: { line: { color: 'rgba(120,120,120,0.4)', width: 0.5 } },
+  }];
+  const layout = {
+    geo: { showframe:false, showcoastlines:false, projection:{type:'natural earth'}, bgcolor:'rgba(0,0,0,0)' },
+    margin: { l:0, r:0, t:0, b:0 },
+    paper_bgcolor: 'rgba(0,0,0,0)',
+    font: { family: 'Arial' },
+  };
+  Plotly.newPlot('map', data, layout, {displayModeBar:false, responsive:true});
+}
+
+function populateSelect(sel, values){
+  [...values].sort().forEach(v=>{
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v;
+    sel.appendChild(o);
+  });
+}
+
+function makeTable(tbodyId, rows, cols, renderRow, controls){
+  const tbody = document.querySelector(tbodyId);
+  function render(list){
+    tbody.innerHTML = list.map(renderRow).join('');
+  }
+  render(rows);
+  if (controls) controls(rows, render);
+  return render;
+}
+
+function setupFilterableTable(prefix, rows, cols, renderRow){
+  const search = document.getElementById('search'+prefix);
+  const catSel = document.getElementById('filterCat'+prefix);
+  const teamSel = document.getElementById('filterTeam'+prefix);
+  const tbody = document.querySelector('#table'+prefix+' tbody');
+  const countEl = document.getElementById('count'+prefix);
+
+  populateSelect(catSel, new Set(rows.map(r=>r.category).filter(Boolean)));
+  populateSelect(teamSel, new Set(rows.map(r=>r.team).filter(Boolean)));
+
+  function apply(){
+    const q = (search.value||'').toLowerCase();
+    const cat = catSel.value, team = teamSel.value;
+    const filtered = rows.filter(r=>{
+      if (cat && r.category !== cat) return false;
+      if (team && r.team !== team) return false;
+      if (q){
+        const hay = JSON.stringify(r).toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+    tbody.innerHTML = filtered.map(renderRow).join('');
+    countEl.textContent = `(${filtered.length} of ${rows.length})`;
+  }
+  search.addEventListener('input', apply);
+  catSel.addEventListener('change', apply);
+  teamSel.addEventListener('change', apply);
+  apply();
+
+  // sortable headers
+  document.querySelectorAll(`#table${prefix} th[data-k]`).forEach(th=>{
+    th.addEventListener('click', ()=>{
+      const k = th.dataset.k;
+      rows.sort((a,b)=>{
+        const av = a[k], bv = b[k];
+        if (av===bv) return 0;
+        if (av===null||av===undefined) return 1;
+        if (bv===null||bv===undefined) return -1;
+        return av > bv ? 1 : -1;
+      });
+      apply();
+    });
+  });
+}
+
+fetch('data/tracker.json?_=' + Date.now())
+  .then(r=>r.json())
+  .then(d=>{
+    document.getElementById('updated').textContent = new Date(d.generated_at).toLocaleString('en-GB', {dateStyle:'medium', timeStyle:'short'});
+    buildLegend();
+    drawMap(d.map_data);
+
+    setupFilterableTable('1', d.list1, [], r=>`<tr>
+      <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td>
+      <td>${esc(r.survey_type)}</td><td>${badge(r.category)}</td>
+      <td>${esc(r.team)}</td><td>${esc(r.person)}</td><td>${esc(r.crosscheck_note)}</td>
+    </tr>`);
+
+    setupFilterableTable('2', d.list2, [], r=>`<tr>
+      <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td>
+      <td>${esc(r.wave)}</td><td>${badge(r.category)}</td>
+      <td>${esc(r.team)}</td><td>${esc(r.note)}</td>
+    </tr>`);
+
+    const tbody3 = document.querySelector('#table3 tbody');
+    tbody3.innerHTML = d.unclear.map(r=>`<tr>
+      <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td><td>${esc(r.issue)}</td>
+    </tr>`).join('');
+    document.getElementById('count3').textContent = `(${d.unclear.length})`;
+  })
+  .catch(err=>{
+    document.getElementById('updated').textContent = 'failed to load data.json';
+    console.error(err);
+  });
+</script>
+</body>
+</html>

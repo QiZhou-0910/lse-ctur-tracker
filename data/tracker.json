@@ -1,0 +1,4996 @@
+{
+  "generated_at": "2026-09-11T17:45:46.540848+00:00",
+  "list1": [
+    {
+      "country": "Albania",
+      "code": "ALB",
+      "year": 2010,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo + Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Argentina",
+      "code": "ARG",
+      "year": 2013,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Argentina",
+      "code": "ARG",
+      "year": 2021,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Argentina - Buenos Aires",
+      "code": "ARG",
+      "year": 2016,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Armenia",
+      "code": "ARM",
+      "year": 2008,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Armenia",
+      "code": "ARM",
+      "year": 2022,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned/to check",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 1974,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Austria",
+      "code": "AUT",
+      "year": 2008,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Bangladesh",
+      "code": "BGD",
+      "year": 2018,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Bangladesh",
+      "code": "BGD",
+      "year": 2019,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Bangladesh",
+      "code": "BGD",
+      "year": 2021,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "year": 1999,
+      "survey_type": "diary",
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": null,
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Qi -- verify against this row's phase."
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "year": 2005,
+      "survey_type": "diary",
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": null,
+      "crosscheck_note": null
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "year": 2013,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Qi -- verify against this row's phase."
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "year": 2013,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Qi -- verify against this row's phase."
+    },
+    {
+      "country": "Benin",
+      "code": "BEN",
+      "year": 2015,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Brazil",
+      "code": "BRA",
+      "year": 2017,
+      "survey_type": null,
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned/to check",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BGR",
+      "year": 1965,
+      "survey_type": "diary",
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": null,
+      "crosscheck_note": null
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BGR",
+      "year": 1988,
+      "survey_type": "diary",
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": null,
+      "crosscheck_note": null
+    },
+    {
+      "country": "Cambodia",
+      "code": "KHM",
+      "year": 2019,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 1981,
+      "survey_type": "diary",
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": null,
+      "crosscheck_note": null
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 1986,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 1992,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 1998,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 2005,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 2010,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 2015,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 2022,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 2022,
+      "survey_type": "diary",
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "in progress",
+      "source": null,
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Chile",
+      "code": "CHL",
+      "year": 2015,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Chile",
+      "code": "CHL",
+      "year": 2023,
+      "survey_type": "recall",
+      "category": "Allocated, not started",
+      "team": "LSE",
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": null,
+      "crosscheck_note": null
+    },
+    {
+      "country": "Colombia",
+      "code": "COL",
+      "year": 2012,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Colombia",
+      "code": "COL",
+      "year": 2016,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Colombia",
+      "code": "COL",
+      "year": 2020,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Costa Rica",
+      "code": "CRI",
+      "year": 2017,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Costa Rica",
+      "code": "CRI",
+      "year": 2022,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Denmark",
+      "code": "DNK",
+      "year": 2008,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Djibouti",
+      "code": "DJI",
+      "year": 2012,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Dominican Republic",
+      "code": "DOM",
+      "year": 2016,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ecuador",
+      "code": "ECU",
+      "year": 2012,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Gabriel",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Egypt",
+      "code": "EGY",
+      "year": 2015,
+      "survey_type": "recall (we have the diary data but not used yet)",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "El Salvador",
+      "code": "SLV",
+      "year": 2017,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "old dofile -  Sana",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ethiopia",
+      "code": "ETH",
+      "year": 2011,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ethiopia",
+      "code": "ETH",
+      "year": 2013,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ethiopia",
+      "code": "ETH",
+      "year": 2015,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ethiopia",
+      "code": "ETH",
+      "year": 2018,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ethiopia",
+      "code": "ETH",
+      "year": 2021,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Finland",
+      "code": "FIN",
+      "year": 1999,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Finland",
+      "code": "FIN",
+      "year": 2009,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Finland",
+      "code": "FIN",
+      "year": 2020,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "France",
+      "code": "FRA",
+      "year": 1974,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "LSE",
+      "person": "Old Sveva",
+      "source_phase": "cleaning in progress",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "France",
+      "code": "FRA",
+      "year": 1985,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "LSE",
+      "person": "Old Sveva",
+      "source_phase": "cleaning in progress",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "France",
+      "code": "FRA",
+      "year": 1998,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "LSE",
+      "person": "Old Sveva",
+      "source_phase": "cleaning in progress",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "France",
+      "code": "FRA",
+      "year": 2009,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Old Sveva",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Georgia",
+      "code": "GEO",
+      "year": 2020,
+      "survey_type": "diary",
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": null,
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 1992,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ghana",
+      "code": "GHA",
+      "year": 1992,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ghana",
+      "code": "GHA",
+      "year": 1998,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ghana",
+      "code": "GHA",
+      "year": 2005,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Ghana",
+      "code": "GHA",
+      "year": 2009,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'pending', assigned to Tanay -- verify against this row's phase."
+    },
+    {
+      "country": "Greece",
+      "code": "GRC",
+      "year": 2013,
+      "survey_type": "diary ",
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Qi -- verify against this row's phase."
+    },
+    {
+      "country": "Greece",
+      "code": "GRC",
+      "year": 2013,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Qi -- verify against this row's phase."
+    },
+    {
+      "country": "Guatemala",
+      "code": "GTM",
+      "year": 2000,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Guatemala",
+      "code": "GTM",
+      "year": 2014,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Guatemala",
+      "code": "GTM",
+      "year": 2017,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 1965,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 1977,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 1986,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 1993,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 2000,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 2009,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 2009,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "year": 1998,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Tanay",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'in progress', assigned to Tanay -- verify against this row's phase."
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "year": 2019,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'in progress', assigned to Tanay -- verify against this row's phase."
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "year": 2024,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'in progress', assigned to Tanay -- verify against this row's phase."
+    },
+    {
+      "country": "Iran",
+      "code": "IRN",
+      "year": 2009,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Iran",
+      "code": "IRN",
+      "year": 2014,
+      "survey_type": null,
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned/to check",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Iran",
+      "code": "IRN",
+      "year": 2020,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Iraq",
+      "code": "IRQ",
+      "year": 2012,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "year": 2008,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "year": 2013,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Kenya",
+      "code": "KEN",
+      "year": 2021,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Kosovo",
+      "code": "KSV",
+      "year": 2017,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Luxembourg",
+      "code": "LUX",
+      "year": 2014,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Malawi",
+      "code": "MWI",
+      "year": 2004,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Malawi",
+      "code": "MWI",
+      "year": 2010,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Malawi",
+      "code": "MWI",
+      "year": 2016,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Malawi",
+      "code": "MWI",
+      "year": 2019,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Mauritius",
+      "code": "MUS",
+      "year": 2018,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Mexico",
+      "code": "MEX",
+      "year": 2002,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Mexico",
+      "code": "MEX",
+      "year": 2009,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Mexico",
+      "code": "MEX",
+      "year": 2014,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Mexico",
+      "code": "MEX",
+      "year": 2019,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "old dofile -  Sana",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "year": 2011,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "year": 2015,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "year": 2015,
+      "survey_type": "diary",
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Sizhan",
+      "source_phase": "cleaning in progress/ctur",
+      "source": null,
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "year": 2019,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Tanay -- verify against this row's phase."
+    },
+    {
+      "country": "Morocco",
+      "code": "MAR",
+      "year": 2010,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Morocco",
+      "code": "MAR",
+      "year": 2012,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Tanay",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Nepal",
+      "code": "NPL",
+      "year": 2015,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 1975,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 1980,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 1985,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 1990,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 1995,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 2000,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 2005,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 2010,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 2011,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 2016,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Nicaragua",
+      "code": "NIC",
+      "year": 1998,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Nigeria",
+      "code": "NGA",
+      "year": 2003,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "year": 2010,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Pakistan",
+      "code": "PAK",
+      "year": 2007,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Palestine",
+      "code": "PSE",
+      "year": 1999,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Palestine",
+      "code": "PSE",
+      "year": 2012,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Paraguay",
+      "code": "PRY",
+      "year": 2016,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "old dofile -  Sana",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Peru",
+      "code": "PER",
+      "year": 2010,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "old dofile ",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Poland",
+      "code": "POL",
+      "year": 2013,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Portugal",
+      "code": "PRT",
+      "year": 1999,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Romania",
+      "code": "ROU",
+      "year": 2011,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Russia",
+      "code": "RUS",
+      "year": "1994-2015",
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaning in progress",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Rwanda",
+      "code": "RWA",
+      "year": 2005,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Rwanda",
+      "code": "RWA",
+      "year": 2010,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Senegal",
+      "code": "SEN",
+      "year": 2018,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Senegal",
+      "code": "SEN",
+      "year": 2021,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Serbia",
+      "code": "SRB",
+      "year": 2010,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HETUS-preharmonized",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Sierra Leone",
+      "code": "SLE",
+      "year": 2003,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "South Africa",
+      "code": "ZAF",
+      "year": 2000,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'pending' -- verify against this row's phase."
+    },
+    {
+      "country": "South Africa",
+      "code": "ZAF",
+      "year": 2010,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Tanay -- verify against this row's phase."
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "year": 2002,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "year": 2009,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Basque Country",
+      "code": "ESP_basque",
+      "year": 1993,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Basque Country",
+      "code": "ESP_basque",
+      "year": 1998,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Basque Country",
+      "code": "ESP_basque",
+      "year": 2003,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Basque Country",
+      "code": "ESP_basque",
+      "year": 2008,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Basque Country",
+      "code": "ESP_basque",
+      "year": 2013,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Basque Country",
+      "code": "ESP_basque",
+      "year": 2018,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Basque Country",
+      "code": "ESP_basque",
+      "year": 2023,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Spain, Catalogna",
+      "code": "ESP",
+      "year": 2011,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Juana",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Sri Lanka",
+      "code": "LKA",
+      "year": 2017,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Sudan",
+      "code": "SDN",
+      "year": 2022,
+      "survey_type": "semi-diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Sudan - children",
+      "code": "SDN_child",
+      "year": 2022,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Sweden",
+      "code": "SWE",
+      "year": 1990,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data we have on server",
+      "source": null,
+      "crosscheck_note": null
+    },
+    {
+      "country": "Sweden",
+      "code": "SWE",
+      "year": 2001,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data we have on server",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Sweden",
+      "code": "SWE",
+      "year": 2010,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data we have on server",
+      "source": "HETUS",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Tanzania",
+      "code": "TZA",
+      "year": 2006,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Tanzania",
+      "code": "TZA",
+      "year": 2014,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Tanay",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Tanzania",
+      "code": "TZA",
+      "year": 2018,
+      "survey_type": null,
+      "category": "Being processed",
+      "team": "CTUR",
+      "person": "Tanay",
+      "source_phase": "cleaning in progress/ctur",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Tanzania",
+      "code": "TZA",
+      "year": 2020,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Timor-Leste",
+      "code": "TLS",
+      "year": 2001,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Timor-Leste",
+      "code": "TLS",
+      "year": 2007,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca?/Chloe ",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Tunisia",
+      "code": "TUN",
+      "year": 2014,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Uganda",
+      "code": "UGA",
+      "year": 2005,
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Uganda",
+      "code": "UGA",
+      "year": 2017,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking', assigned to Sizhan -- verify against this row's phase."
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 2000,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 2014,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Sveva-Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 2023,
+      "survey_type": null,
+      "category": "Allocated, not started",
+      "team": "CTUR",
+      "person": "Qi",
+      "source_phase": "data in dbox, not cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "United States",
+      "code": "USA",
+      "year": "1930-2003",
+      "survey_type": null,
+      "category": "Not allocated",
+      "team": null,
+      "person": null,
+      "source_phase": "data in dbox, not cleaned",
+      "source": null,
+      "crosscheck_note": null
+    },
+    {
+      "country": "United States",
+      "code": "USA",
+      "year": "2003-2023",
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Jacopo",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Uruguay",
+      "code": "URY",
+      "year": 2021,
+      "survey_type": "recall",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Chloe",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    },
+    {
+      "country": "Vietnam",
+      "code": "VNM",
+      "year": 2022,
+      "survey_type": "diary",
+      "category": "Done",
+      "team": "LSE",
+      "person": "Luca",
+      "source_phase": "cleaned",
+      "source": "HER-CTUR",
+      "crosscheck_note": null
+    }
+  ],
+  "list2": [
+    {
+      "country": "Afghanistan",
+      "code": "AFG",
+      "year": 2018,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Albania",
+      "code": "ALB",
+      "year": 1996,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Algeria",
+      "code": "DZA",
+      "year": 2012,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": "LSE",
+      "note": "Confirmed in nso_contact_tracking.xlsx: mail sent 19/05/2026, status 'awaiting response'.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Armenia",
+      "code": "ARM",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 1987,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 1992,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 1996,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 1997,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 2006,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 2009,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 2020,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "year": 2024,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Austria",
+      "code": "AUT",
+      "year": 1981,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Austria",
+      "code": "AUT",
+      "year": 1992,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Austria",
+      "code": "AUT",
+      "year": 2020,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Austria",
+      "code": "AUT",
+      "year": 2022,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Azerbaijan",
+      "code": "AZE",
+      "year": 2008,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": "LSE",
+      "note": "nso_contact_tracking.xlsx logs a mail sent 09/06/2026 for 'Azerbaijan' (wave unspecified), 'awaiting response'.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Azerbaijan",
+      "code": "AZE",
+      "year": 2012,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": "LSE",
+      "note": "nso_contact_tracking.xlsx logs a mail sent 09/06/2026 for 'Azerbaijan' (wave unspecified), 'awaiting response'.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bangladesh",
+      "code": "BGD",
+      "year": 1974,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bangladesh",
+      "code": "BGD",
+      "year": 1976,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bangladesh",
+      "code": "BGD",
+      "year": 2012,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Belarus",
+      "code": "BLR",
+      "year": 2015,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "year": 1966,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "year": 2020,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": "CTUR",
+      "note": "once they get back to us about the roster for 99 and 05, we plan to request access to this survey | Contingent on Belgium's NSO replying about the 1999/2005 roster issue; CTUR also plans to apply within weeks (data_acquisition.xlsx).",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "year": 2022,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bhutan",
+      "code": "BTN",
+      "year": 2008,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bolivia",
+      "code": "BOL",
+      "year": 2019,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "code": "BIH",
+      "year": 2024,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Brazil",
+      "code": "BRA",
+      "year": 2025,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BGR",
+      "year": 1996,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": null,
+      "note": "emailed Info@nsi.bg",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BGR",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BGR",
+      "year": 2010,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": "LSE",
+      "note": "FLAG: nso_contact_tracking.xlsx notes 'CHECK DROPZONE, I THINK I SAW BULGARIA' -- may already be received.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BGR",
+      "year": 2023,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": "CTUR",
+      "note": "im about to receive a contact of someone at EUROSTAT with connections with this NSO. My plan is to ask for access to all of their surveys, including the most recent one. I will keep you posted.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Burkina Faso",
+      "code": "BFA",
+      "year": 2018,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Cabo Verde",
+      "code": "CPV",
+      "year": 2012,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Cambodia",
+      "code": "KHM",
+      "year": 2003,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Cambodia",
+      "code": "KHM",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Cameroon",
+      "code": "CMR",
+      "year": 2014,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Cameroon",
+      "code": "CMR",
+      "year": 2022,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "year": 1971,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "China",
+      "code": "CHN",
+      "year": 2005,
+      "wave": null,
+      "category": "Dataset agreed, not received",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "China",
+      "code": "CHN",
+      "year": 2008,
+      "wave": null,
+      "category": "Dataset agreed, not received",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "China",
+      "code": "CHN",
+      "year": 2017,
+      "wave": null,
+      "category": "Dataset agreed, not received",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "China",
+      "code": "CHN",
+      "year": 2021,
+      "wave": null,
+      "category": "Dataset agreed, not received",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "China",
+      "code": "CHN",
+      "year": 2024,
+      "wave": null,
+      "category": "Dataset agreed, not received",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "China",
+      "code": "CHN",
+      "year": 2025,
+      "wave": null,
+      "category": "Dataset agreed, not received",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Croatia",
+      "code": "HRV",
+      "year": 2024,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Cuba",
+      "code": "CUB",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Czechia",
+      "code": "CZE",
+      "year": 1965,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Czechia",
+      "code": "CZE",
+      "year": 1990,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Denmark",
+      "code": "DNK",
+      "year": 1964,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Denmark",
+      "code": "DNK",
+      "year": 1975,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Denmark",
+      "code": "DNK",
+      "year": 1987,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Denmark",
+      "code": "DNK",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Dominican Republic",
+      "code": "DOM",
+      "year": 1995,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Estonia",
+      "code": "EST",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Estonia",
+      "code": "EST",
+      "year": 2010,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Estonia",
+      "code": "EST",
+      "year": 2021,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: CTUR has an 'application in progress' for the HETUS 2020 wave.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Fiji",
+      "code": "FJI",
+      "year": 1987,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Finland",
+      "code": "FIN",
+      "year": 1979,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Finland",
+      "code": "FIN",
+      "year": 1987,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Finland",
+      "code": "FIN",
+      "year": 2022,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "France",
+      "code": "FRA",
+      "year": 1971,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "France",
+      "code": "FRA",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 1965,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 1966,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 1991,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 2002,
+      "wave": null,
+      "category": "Data received, not yet in shared folder",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: NSO 'just added to drop zone'; a further application for extended access is in progress.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 2012,
+      "wave": null,
+      "category": "Data received, not yet in shared folder",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: NSO 'just added to drop zone'; application for extended access in progress.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "year": 2022,
+      "wave": null,
+      "category": "Data received, not yet in shared folder",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: CTUR's RA already has access to public microdata for 2020 and the previous two surveys; not yet reviewed.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Greece",
+      "code": "GRC",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Guyana",
+      "code": "GUY",
+      "year": null,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Hong Kong",
+      "code": "HKG",
+      "year": 2014,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 1976,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "year": 1999,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Iceland",
+      "code": "ISL",
+      "year": 2024,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "year": 1976,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "year": 1990,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "year": 1991,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "year": 1996,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "year": 1972,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "year": 1976,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "year": 1977,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "year": 1998,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "year": 2005,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Iraq",
+      "code": "IRQ",
+      "year": 2007,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Ireland",
+      "code": "IRL",
+      "year": 2005,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Israel",
+      "code": "ISR",
+      "year": 1991,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "year": 1980,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "year": 1989,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "year": 1996,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "year": 2002,
+      "wave": null,
+      "category": "Data received, not yet in shared folder",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: contact 'just shared a new folder called ITALY NEW' for 2002-2003.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Jamaica",
+      "code": "JAM",
+      "year": 2018,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 1976,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 1981,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 1986,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 1991,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 1996,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 2006,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 2011,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 2016,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "year": 2021,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kazakhstan",
+      "code": "KAZ",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kazakhstan",
+      "code": "KAZ",
+      "year": 2003,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kazakhstan",
+      "code": "KAZ",
+      "year": 2006,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kazakhstan",
+      "code": "KAZ",
+      "year": 2012,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kiribati",
+      "code": "KIR",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Korea, Rep.",
+      "code": "KOR",
+      "year": 1999,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Korea, Rep.",
+      "code": "KOR",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Korea, Rep.",
+      "code": "KOR",
+      "year": 2005,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Korea, Rep.",
+      "code": "KOR",
+      "year": 2009,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Korea, Rep.",
+      "code": "KOR",
+      "year": 2014,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Korea, Rep.",
+      "code": "KOR",
+      "year": 2019,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "code": "KGZ",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "code": "KGZ",
+      "year": 2005,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "code": "KGZ",
+      "year": 2015,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "code": "KGZ",
+      "year": 2021,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Latvia",
+      "code": "LVA",
+      "year": 1996,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Latvia",
+      "code": "LVA",
+      "year": 2003,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Lesotho",
+      "code": "LSO",
+      "year": 2002,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Lesotho",
+      "code": "LSO",
+      "year": 2022,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Lithuania",
+      "code": "LTU",
+      "year": 1997,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Lithuania",
+      "code": "LTU",
+      "year": 2003,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Luxembourg",
+      "code": "LUX",
+      "year": 1996,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Macedonia",
+      "code": "MKD",
+      "year": 2009,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Macedonia",
+      "code": "MKD",
+      "year": 2014,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Madagascar",
+      "code": "MDG",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Mali",
+      "code": "MLI",
+      "year": 2008,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Malta",
+      "code": "MLT",
+      "year": 2002,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Martinique",
+      "code": "MTQ",
+      "year": 2009,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Mauritius",
+      "code": "MUS",
+      "year": 2003,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Moldova",
+      "code": "MDA",
+      "year": 2011,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Moldova",
+      "code": "MDA",
+      "year": 2012,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "year": 2007,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Morocco",
+      "code": "MAR",
+      "year": 1997,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Nepal",
+      "code": "NPL",
+      "year": 1980,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Nepal",
+      "code": "NPL",
+      "year": 1992,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": 2012,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "New Zealand",
+      "code": "NZL",
+      "year": 1990,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "New Zealand",
+      "code": "NZL",
+      "year": 1998,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "New Zealand",
+      "code": "NZL",
+      "year": 2009,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Nigeria",
+      "code": "NGA",
+      "year": 1998,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Nigeria",
+      "code": "NGA",
+      "year": 2024,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "North Macedonia",
+      "code": "MKD",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx (which only lists 'Macedonia' 2009/2014); listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "year": 1971,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "year": 1981,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "year": 1990,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "year": 2001,
+      "wave": null,
+      "category": "Data received, not yet in shared folder",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: NSO contact said 'Just shared what we had' for 2000-2001.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request sent, no response yet",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: CTUR contact Elisabeth Ronning was approached ('yes, waiting for an answer').",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Oman",
+      "code": "OMN",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Oman",
+      "code": "OMN",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Oman",
+      "code": "OMN",
+      "year": 2007,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Pakistan",
+      "code": "PAK",
+      "year": 1986,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Pakistan",
+      "code": "PAK",
+      "year": 1990,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Panama",
+      "code": "PAN",
+      "year": 2011,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Paraguay",
+      "code": "PRY",
+      "year": 0,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Peru",
+      "code": "PER",
+      "year": 1966,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Peru",
+      "code": "PER",
+      "year": 2024,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Philippines",
+      "code": "PHL",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Poland",
+      "code": "POL",
+      "year": 1965,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Poland",
+      "code": "POL",
+      "year": 2003,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Poland",
+      "code": "POL",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Poland",
+      "code": "POL",
+      "year": 2013,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Poland",
+      "code": "POL",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Portugal",
+      "code": "PRT",
+      "year": 2015,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Qatar",
+      "code": "QAT",
+      "year": 2012,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Romania",
+      "code": "ROU",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Romania",
+      "code": "ROU",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Serbia",
+      "code": "SRB",
+      "year": 1965,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Serbia",
+      "code": "SRB",
+      "year": 2015,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Serbia",
+      "code": "SRB",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Slovakia",
+      "code": "SVK",
+      "year": 2006,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Slovenia",
+      "code": "SVN",
+      "year": 1965,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Slovenia",
+      "code": "SVN",
+      "year": 2000,
+      "wave": null,
+      "category": "Data received, not yet in shared folder",
+      "team": null,
+      "note": "Per data_acquisition.xlsx: 'Just added to drop zone what we have' for 2000-2001.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "South Africa",
+      "code": "ZAF",
+      "year": 2020,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "year": 1992,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "year": 1997,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "year": 2008,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "year": 2013,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "year": 2018,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 1997,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 2007,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 2010,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 2013,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 2016,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "year": 2020,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Taiwan",
+      "code": "TWN",
+      "year": 1987,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Taiwan",
+      "code": "TWN",
+      "year": 1990,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Taiwan",
+      "code": "TWN",
+      "year": 1994,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Taiwan",
+      "code": "TWN",
+      "year": 2000,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Taiwan",
+      "code": "TWN",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Tajikistan",
+      "code": "TJK",
+      "year": 2023,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Thailand",
+      "code": "THA",
+      "year": 2001,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Thailand",
+      "code": "THA",
+      "year": 2004,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Thailand",
+      "code": "THA",
+      "year": 2009,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Thailand",
+      "code": "THA",
+      "year": 2015,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Tunisia",
+      "code": "TUN",
+      "year": 2005,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Turkey",
+      "code": "TUR",
+      "year": 2006,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": "LSE",
+      "note": "nso_contact_tracking.xlsx logs a mail+form sent 19/05/2026 for 'Turkey' (wave unspecified), 'awaiting response'.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Turkey",
+      "code": "TUR",
+      "year": 2011,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Turkey",
+      "code": "TUR",
+      "year": 2014,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Turkey",
+      "code": "TUR",
+      "year": 2015,
+      "wave": null,
+      "category": "Request sent, no response yet",
+      "team": "LSE",
+      "note": "nso_contact_tracking.xlsx logs a mail+form sent 19/05/2026 for 'Turkey' (wave unspecified), 'awaiting response'.",
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Turkey",
+      "code": "TUR",
+      "year": null,
+      "wave": "HETUS 2020",
+      "category": "Request not sent yet",
+      "team": null,
+      "note": "Not in data_management.xlsx; listed per data_acquisition.xlsx.",
+      "origin": "data_acquisition.xlsx (not in data_management.xlsx)"
+    },
+    {
+      "country": "Tuvalu",
+      "code": "TUV",
+      "year": 2003,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Tuvalu",
+      "code": "TUV",
+      "year": 2013,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1937,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1961,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1974,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1983,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1986,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1987,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1995,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 1999,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "year": 2005,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Venezuela",
+      "code": "VEN",
+      "year": 2011,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    },
+    {
+      "country": "Zimbabwe",
+      "code": "ZWE",
+      "year": 2025,
+      "wave": null,
+      "category": "Request not sent yet",
+      "team": null,
+      "note": null,
+      "origin": "data_management.xlsx"
+    }
+  ],
+  "unclear": [
+    {
+      "country": "Benin",
+      "code": "BEN",
+      "year": 1998,
+      "issue": "No phase or notes recorded in data_management.xlsx. (Benin 2015 is a separate, already-cleaned survey.)"
+    },
+    {
+      "country": "Vanuatu",
+      "code": "VUT",
+      "year": 1983,
+      "issue": "No phase or notes recorded in data_management.xlsx."
+    },
+    {
+      "country": "Vanuatu",
+      "code": "VUT",
+      "year": 1995,
+      "issue": "No phase or notes recorded in data_management.xlsx."
+    },
+    {
+      "country": "Vanuatu",
+      "code": "VUT",
+      "year": 1999,
+      "issue": "No phase or notes recorded in data_management.xlsx."
+    }
+  ],
+  "map_data": [
+    {
+      "code": "AFG",
+      "country": "Afghanistan",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "ALB",
+      "country": "Albania",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "DZA",
+      "country": "Algeria",
+      "category": "Request sent, no response yet",
+      "rank": 8
+    },
+    {
+      "code": "ARG",
+      "country": "Argentina",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "ARM",
+      "country": "Armenia",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "AUS",
+      "country": "Australia",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "AUT",
+      "country": "Austria",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "AZE",
+      "country": "Azerbaijan",
+      "category": "Request sent, no response yet",
+      "rank": 8
+    },
+    {
+      "code": "BGD",
+      "country": "Bangladesh",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "BLR",
+      "country": "Belarus",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "BEL",
+      "country": "Belgium",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "BEN",
+      "country": "Benin",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "BTN",
+      "country": "Bhutan",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "BOL",
+      "country": "Bolivia",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "BIH",
+      "country": "Bosnia and Herzegovina",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "BRA",
+      "country": "Brazil",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "BGR",
+      "country": "Bulgaria",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "BFA",
+      "country": "Burkina Faso",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "CPV",
+      "country": "Cabo Verde",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "KHM",
+      "country": "Cambodia",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "CMR",
+      "country": "Cameroon",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "CAN",
+      "country": "Canada",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "CHL",
+      "country": "Chile",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "CHN",
+      "country": "China",
+      "category": "Dataset agreed, not received",
+      "rank": 6
+    },
+    {
+      "code": "COL",
+      "country": "Colombia",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "CRI",
+      "country": "Costa Rica",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "HRV",
+      "country": "Croatia",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "CUB",
+      "country": "Cuba",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "CZE",
+      "country": "Czechia",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "DNK",
+      "country": "Denmark",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "DJI",
+      "country": "Djibouti",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "DOM",
+      "country": "Dominican Republic",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "ECU",
+      "country": "Ecuador",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "EGY",
+      "country": "Egypt",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SLV",
+      "country": "El Salvador",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "EST",
+      "country": "Estonia",
+      "category": "Request sent, no response yet",
+      "rank": 8
+    },
+    {
+      "code": "ETH",
+      "country": "Ethiopia",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "FJI",
+      "country": "Fiji",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "FIN",
+      "country": "Finland",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "FRA",
+      "country": "France",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "GEO",
+      "country": "Georgia",
+      "category": "Being processed",
+      "rank": 2
+    },
+    {
+      "code": "DEU",
+      "country": "Germany",
+      "category": "Being processed",
+      "rank": 2
+    },
+    {
+      "code": "GHA",
+      "country": "Ghana",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "GRC",
+      "country": "Greece",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "GTM",
+      "country": "Guatemala",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "GUY",
+      "country": "Guyana",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "HKG",
+      "country": "Hong Kong",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "HUN",
+      "country": "Hungary",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "ISL",
+      "country": "Iceland",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "IND",
+      "country": "India",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "IDN",
+      "country": "Indonesia",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "IRN",
+      "country": "Iran",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "IRQ",
+      "country": "Iraq",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "IRL",
+      "country": "Ireland",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "ISR",
+      "country": "Israel",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "ITA",
+      "country": "Italy",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "JAM",
+      "country": "Jamaica",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "JPN",
+      "country": "Japan",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "KAZ",
+      "country": "Kazakhstan",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "KEN",
+      "country": "Kenya",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "KIR",
+      "country": "Kiribati",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "KOR",
+      "country": "Korea, Rep.",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "KSV",
+      "country": "Kosovo",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "KGZ",
+      "country": "Kyrgyzstan",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "LVA",
+      "country": "Latvia",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "LSO",
+      "country": "Lesotho",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "LTU",
+      "country": "Lithuania",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "LUX",
+      "country": "Luxembourg",
+      "category": "Being processed",
+      "rank": 2
+    },
+    {
+      "code": "MKD",
+      "country": "Macedonia",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "MDG",
+      "country": "Madagascar",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "MWI",
+      "country": "Malawi",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "MLI",
+      "country": "Mali",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "MLT",
+      "country": "Malta",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "MTQ",
+      "country": "Martinique",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "MUS",
+      "country": "Mauritius",
+      "category": "Being processed",
+      "rank": 2
+    },
+    {
+      "code": "MEX",
+      "country": "Mexico",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "MDA",
+      "country": "Moldova",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "MNG",
+      "country": "Mongolia",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "MAR",
+      "country": "Morocco",
+      "category": "Being processed",
+      "rank": 2
+    },
+    {
+      "code": "NPL",
+      "country": "Nepal",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "NLD",
+      "country": "Netherlands",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "NZL",
+      "country": "New Zealand",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "NIC",
+      "country": "Nicaragua",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "NGA",
+      "country": "Nigeria",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "NOR",
+      "country": "Norway",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "OMN",
+      "country": "Oman",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "PAK",
+      "country": "Pakistan",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "PSE",
+      "country": "Palestine",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "PAN",
+      "country": "Panama",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "PRY",
+      "country": "Paraguay",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "PER",
+      "country": "Peru",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "PHL",
+      "country": "Philippines",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "POL",
+      "country": "Poland",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "PRT",
+      "country": "Portugal",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "QAT",
+      "country": "Qatar",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "ROU",
+      "country": "Romania",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "RUS",
+      "country": "Russia",
+      "category": "Being processed",
+      "rank": 2
+    },
+    {
+      "code": "RWA",
+      "country": "Rwanda",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SEN",
+      "country": "Senegal",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SRB",
+      "country": "Serbia",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SLE",
+      "country": "Sierra Leone",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SVK",
+      "country": "Slovakia",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "SVN",
+      "country": "Slovenia",
+      "category": "Data received, not yet in shared folder",
+      "rank": 5
+    },
+    {
+      "code": "ZAF",
+      "country": "South Africa",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "ESP",
+      "country": "Spain",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "ESP_basque",
+      "country": "Spain, Basque Country",
+      "category": "Allocated, not started",
+      "rank": 3
+    },
+    {
+      "code": "LKA",
+      "country": "Sri Lanka",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SDN",
+      "country": "Sudan",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SDN_child",
+      "country": "Sudan - children",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "SWE",
+      "country": "Sweden",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "CHE",
+      "country": "Switzerland",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "TWN",
+      "country": "Taiwan",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "TJK",
+      "country": "Tajikistan",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "TZA",
+      "country": "Tanzania",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "THA",
+      "country": "Thailand",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "TLS",
+      "country": "Timor-Leste",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "TUN",
+      "country": "Tunisia",
+      "category": "Not allocated",
+      "rank": 4
+    },
+    {
+      "code": "TUR",
+      "country": "Turkey",
+      "category": "Request sent, no response yet",
+      "rank": 8
+    },
+    {
+      "code": "TUV",
+      "country": "Tuvalu",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "UGA",
+      "country": "Uganda",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "GBR",
+      "country": "United Kingdom",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "USA",
+      "country": "United States",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "URY",
+      "country": "Uruguay",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "VEN",
+      "country": "Venezuela",
+      "category": "Request not sent yet",
+      "rank": 9
+    },
+    {
+      "code": "VNM",
+      "country": "Vietnam",
+      "category": "Done",
+      "rank": 1
+    },
+    {
+      "code": "ZWE",
+      "country": "Zimbabwe",
+      "category": "Request not sent yet",
+      "rank": 9
+    }
+  ],
+  "category_rank": {
+    "Done": 1,
+    "Being processed": 2,
+    "Allocated, not started": 3,
+    "Not allocated": 4,
+    "Data received, not yet in shared folder": 5,
+    "Dataset agreed, not received": 6,
+    "Request sent, still in discussion": 7,
+    "Request sent, no response yet": 8,
+    "Request not sent yet": 9
+  }
+}
