@@ -17,7 +17,15 @@ function Log($msg) {
 
 try {
     Log "Running generate_data.py..."
-    py -3 scripts\generate_data.py 2>&1 | ForEach-Object { Log $_ }
+    # Note: deliberately not using 2>&1 here -- PowerShell wraps a native
+    # command's stderr lines as terminating ErrorRecords under
+    # $ErrorActionPreference = "Stop", which would abort this script even
+    # on success. Check $LASTEXITCODE instead.
+    $out = & py -3 scripts\generate_data.py
+    $out | ForEach-Object { Log $_ }
+    if ($LASTEXITCODE -ne 0) {
+        throw "generate_data.py exited with code $LASTEXITCODE"
+    }
 
     $status = git status --porcelain data\tracker.json
     if ([string]::IsNullOrWhiteSpace($status)) {
@@ -27,6 +35,9 @@ try {
         git add data\tracker.json
         git commit -m "Auto-update tracker data ($(Get-Date -Format 'yyyy-MM-dd HH:mm'))"
         git push
+        if ($LASTEXITCODE -ne 0) {
+            throw "git push exited with code $LASTEXITCODE"
+        }
         Log "Pushed."
     }
 } catch {

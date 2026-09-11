@@ -15,7 +15,6 @@ Sources:
 import json
 import re
 import shutil
-import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -237,4 +236,4 @@ payload = dict(
 OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 OUT_PATH.write_text(json.dumps(payload, indent=2, default=str), encoding="utf-8")
 print(f"Wrote {OUT_PATH} -- List1: {len(list1)} rows, List2: {len(list2)} rows, "
-      f"countries on map: {len(map_data)}", file=sys.stderr)
+      f"countries on map: {len(map_data)}")
