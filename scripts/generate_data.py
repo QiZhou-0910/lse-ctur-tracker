@@ -87,21 +87,19 @@ for r in mgmt_rows:
     key = (norm(r['country']), r['year'])
     tmatches = ctur_tracker.get(key, [])
     category = HAVE_PHASES[phase]
+    # Team (LSE/CTUR) is kept; individual researcher names are deliberately
+    # not surfaced on the public site.
     team = r['cleanby']
-    person = r['wholeaned']
     ctur_status = tmatches[0]['status'] if tmatches else None
-    if not person and tmatches and tmatches[0]['assigned']:
-        person = tmatches[0]['assigned']
-        team = team or 'CTUR'
+    if not team and tmatches and tmatches[0]['assigned']:
+        team = 'CTUR'
     if category is None:
         category = 'Allocated, not started' if team else 'Not allocated'
     crosscheck = None
     if ctur_status and norm(ctur_status) not in norm(phase):
-        crosscheck = (f"CTUR Tracker shows status '{ctur_status}'"
-                      + (f", assigned to {tmatches[0]['assigned']}" if tmatches[0]['assigned'] else "")
-                      + " -- verify against this row's phase.")
-    list1.append(dict(country=r['country'], code=r['code'], year=r['year'], survey_type=r['survtype'],
-                       category=category, team=team, person=person, source_phase=phase,
+        crosscheck = f"CTUR Tracker shows status '{ctur_status}' -- verify against this row's phase."
+    list1.append(dict(country=r['country'], code=r['code'], year=r['year'],
+                       category=category, team=team, source_phase=phase,
                        source=r['source'], crosscheck_note=crosscheck))
 
 # ================= LIST 2 =================

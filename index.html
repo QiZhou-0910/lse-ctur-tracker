@@ -17,16 +17,40 @@
   }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;}
-  header{padding:22px 28px;border-bottom:1px solid var(--border);background:var(--panel);}
+  header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--panel);}
   header h1{margin:0 0 4px;font-size:1.5rem;}
   header p{margin:0;color:var(--muted);font-size:.9rem;}
+  #updated-badge{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:4px 10px;border-radius:14px;background:var(--bg);border:1px solid var(--border);font-size:.78rem;color:var(--muted);}
+  #updated-badge b{color:var(--text);font-weight:600;}
+
+  nav.tabs{display:flex;gap:4px;padding:0 28px;background:var(--panel);border-bottom:1px solid var(--border);overflow-x:auto;}
+  nav.tabs button{
+    appearance:none;border:none;background:none;padding:12px 16px;font-size:.9rem;font-family:inherit;
+    color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;
+  }
+  nav.tabs button:hover{color:var(--text);}
+  nav.tabs button.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600;}
+
   main{max-width:1200px;margin:0 auto;padding:24px 20px 60px;}
-  .panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:26px;}
+  .tabpanel{display:none;}
+  .tabpanel.active{display:block;}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:22px;}
   .panel h2{margin-top:0;font-size:1.15rem;}
-  #map{width:100%;height:520px;}
-  .legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px;font-size:.82rem;color:var(--muted);}
+  .desc{color:var(--muted);font-size:.9rem;margin:0 0 16px;max-width:75ch;line-height:1.5;}
+
+  #map{width:100%;height:480px;}
+  .legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:10px;font-size:.8rem;color:var(--muted);}
   .legend span{display:inline-flex;align-items:center;gap:6px;}
   .swatch{width:12px;height:12px;border-radius:3px;display:inline-block;}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:8px;}
+  .stat-card{border:1px solid var(--border);border-radius:8px;padding:12px 14px;border-left:4px solid var(--c9);}
+  .stat-card .n{font-size:1.5rem;font-weight:700;}
+  .stat-card .l{font-size:.78rem;color:var(--muted);margin-top:2px;}
+  .dash-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:800px){ .dash-cols{grid-template-columns:1fr;} }
+  .dash-cols h3{font-size:.95rem;margin:0 0 10px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+
   .controls{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
   .controls input, .controls select{
     padding:7px 10px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);font-size:.85rem;
@@ -47,71 +71,116 @@
 <body>
 <header>
   <h1>LSE-CTUR Collaboration Tracker</h1>
-  <p>Country-year harmonisation and data-request progress for the MTUS+ project. Last updated: <span id="updated">loading...</span> (refreshed every 12 hours from the team's tracking spreadsheets).</p>
+  <p>Country-year harmonisation and data-request progress for the MTUS+ project.</p>
+  <div id="updated-badge">&#8635; Data last updated: <b id="updated">loading...</b></div>
 </header>
+
+<nav class="tabs">
+  <button class="tab-btn active" data-tab="overview">Overview</button>
+  <button class="tab-btn" data-tab="list1">List 1 — Data In Hand</button>
+  <button class="tab-btn" data-tab="list2">List 2 — Data Requests</button>
+  <button class="tab-btn" data-tab="unclear">Unclear</button>
+</nav>
+
 <main>
 
-  <section class="panel">
-    <h2>Overall progress by country</h2>
-    <div id="map"></div>
-    <div class="legend" id="legend"></div>
-  </section>
+  <!-- ===================== OVERVIEW ===================== -->
+  <section class="tabpanel active" id="tab-overview">
+    <div class="panel">
+      <h2>Overview</h2>
+      <p class="desc">A snapshot of where the MTUS+ harmonisation stands right now: the map shows each country's
+        best current status across every survey year it has, and the two panels below summarise how many
+        country-year surveys sit in each stage of List 1 (data already in hand) and List 2 (data still being
+        requested).</p>
+      <div id="map"></div>
+      <div class="legend" id="legend"></div>
+    </div>
 
-  <section class="panel">
-    <h2>List 1 &mdash; Data In Hand <span class="count" id="count1"></span></h2>
-    <p class="muted">Every country-year survey the team already has some form of access to.</p>
-    <div class="controls">
-      <input type="text" id="search1" placeholder="Search country, team, person...">
-      <select id="filterCat1"><option value="">All statuses</option></select>
-      <select id="filterTeam1"><option value="">All teams</option></select>
-    </div>
-    <div class="tablewrap">
-      <table id="table1">
-        <thead><tr>
-          <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
-          <th data-k="survey_type">Survey type</th><th data-k="category">Status</th>
-          <th data-k="team">Team</th><th data-k="person">Person</th><th data-k="crosscheck_note">Cross-check note</th>
-        </tr></thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="panel">
-    <h2>List 2 &mdash; Data Requests <span class="count" id="count2"></span></h2>
-    <p class="muted">Every country-year survey the team does not yet have access to, and the state of the request for it.</p>
-    <div class="controls">
-      <input type="text" id="search2" placeholder="Search country, notes...">
-      <select id="filterCat2"><option value="">All statuses</option></select>
-      <select id="filterTeam2"><option value="">All teams</option></select>
-    </div>
-    <div class="tablewrap">
-      <table id="table2">
-        <thead><tr>
-          <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
-          <th data-k="wave">Wave</th><th data-k="category">Status</th>
-          <th data-k="team">Team pursuing</th><th data-k="note">Notes</th>
-        </tr></thead>
-        <tbody></tbody>
-      </table>
+    <div class="panel">
+      <h2>Summary dashboard</h2>
+      <div class="dash-cols">
+        <div>
+          <h3>List 1 — Data In Hand</h3>
+          <div class="stat-grid" id="dash1"></div>
+        </div>
+        <div>
+          <h3>List 2 — Data Requests</h3>
+          <div class="stat-grid" id="dash2"></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="panel">
-    <h2>Unclear &mdash; needs input <span class="count" id="count3"></span></h2>
-    <p class="muted">Rows where the source spreadsheets gave no confident status; left blank rather than guessed.</p>
-    <div class="tablewrap">
-      <table id="table3">
-        <thead><tr><th>Country</th><th>ISO3</th><th>Year</th><th>Issue</th></tr></thead>
-        <tbody></tbody>
-      </table>
+  <!-- ===================== LIST 1 ===================== -->
+  <section class="tabpanel" id="tab-list1">
+    <div class="panel">
+      <h2>List 1 — Data In Hand <span class="count" id="count1"></span></h2>
+      <p class="desc">Every country-year survey the team already has some form of access to, and how far it has
+        progressed: whether it is fully harmonised ("Done"), being worked on, or sitting in the shared folder
+        waiting to be picked up. Individual researcher names are not shown here — only which team (LSE or CTUR)
+        is responsible.</p>
+      <div class="controls">
+        <input type="text" id="search1" placeholder="Search country...">
+        <select id="filterCat1"><option value="">All statuses</option></select>
+        <select id="filterTeam1"><option value="">All teams</option></select>
+      </div>
+      <div class="tablewrap">
+        <table id="table1">
+          <thead><tr>
+            <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
+            <th data-k="category">Status</th><th data-k="team">Team</th>
+            <th data-k="crosscheck_note">Cross-check note</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIST 2 ===================== -->
+  <section class="tabpanel" id="tab-list2">
+    <div class="panel">
+      <h2>List 2 — Data Requests <span class="count" id="count2"></span></h2>
+      <p class="desc">Every country-year survey the team does not yet have access to, and what has (or hasn't)
+        been done to try to obtain it — from no outreach at all, through to a request that's been sent and is
+        awaiting a reply, to data that has reportedly arrived but isn't logged as received yet.</p>
+      <div class="controls">
+        <input type="text" id="search2" placeholder="Search country, notes...">
+        <select id="filterCat2"><option value="">All statuses</option></select>
+        <select id="filterTeam2"><option value="">All teams</option></select>
+      </div>
+      <div class="tablewrap">
+        <table id="table2">
+          <thead><tr>
+            <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
+            <th data-k="wave">Wave</th><th data-k="category">Status</th>
+            <th data-k="team">Team pursuing</th><th data-k="note">Notes</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== UNCLEAR ===================== -->
+  <section class="tabpanel" id="tab-unclear">
+    <div class="panel">
+      <h2>Unclear — needs input <span class="count" id="count3"></span></h2>
+      <p class="desc">A short list of country-years where the source spreadsheets gave no confident status —
+        left blank rather than guessed, and flagged here for the relevant team to fill in.</p>
+      <div class="tablewrap">
+        <table id="table3">
+          <thead><tr><th>Country</th><th>ISO3</th><th>Year</th><th>Issue</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
   </section>
 
 </main>
 <footer>
   Data sources: data_management.xlsx, data_acquisition.xlsx, nso_contact_tracking.xlsx (Dropbox), MTUS_tracker.xlsx (OneDrive, CTUR team).
-  See the <a href="https://github.com/qtnvqz3/lse-ctur-tracker" target="_blank" rel="noopener">repository</a> for the generation script and full methodology notes.
+  Refreshed automatically every 12 hours. See the <a href="https://github.com/QiZhou-0910/lse-ctur-tracker" target="_blank" rel="noopener">repository</a> for the generation script and full methodology notes.
 </footer>
 
 <script>
@@ -129,12 +198,27 @@ const CAT_COLOR = {
 const RANK_ORDER = ['Done','Being processed','Allocated, not started','Not allocated',
   'Data received, not yet in shared folder','Dataset agreed, not received',
   'Request sent, still in discussion','Request sent, no response yet','Request not sent yet'];
+const LIST1_CATS = RANK_ORDER.slice(0,4);
+const LIST2_CATS = RANK_ORDER.slice(4);
 
 function esc(s){ return (s===null||s===undefined) ? '' : String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function badge(cat){
   const c = CAT_COLOR[cat] || '#ccc';
   return `<span class="badge" style="background:${c}">${esc(cat||'')}</span>`;
 }
+
+// ---------------- Tabs ----------------
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tabpanel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+    if (btn.dataset.tab === 'overview' && window.Plotly) {
+      Plotly.Plots.resize('map');
+    }
+  });
+});
 
 function buildLegend(){
   const el = document.getElementById('legend');
@@ -173,6 +257,21 @@ function drawMap(mapData){
   Plotly.newPlot('map', data, layout, {displayModeBar:false, responsive:true});
 }
 
+function buildDashboard(elId, rows, cats){
+  const counts = {};
+  cats.forEach(c=>counts[c]=0);
+  rows.forEach(r=>{ if (counts[r.category]!==undefined) counts[r.category]++; });
+  const el = document.getElementById(elId);
+  el.innerHTML = cats.map(c=>`
+    <div class="stat-card" style="border-left-color:${CAT_COLOR[c]}">
+      <div class="n">${counts[c]}</div>
+      <div class="l">${esc(c)}</div>
+    </div>`).join('')
+    + `<div class="stat-card" style="border-left-color:var(--accent)">
+         <div class="n">${rows.length}</div><div class="l">Total surveys</div>
+       </div>`;
+}
+
 function populateSelect(sel, values){
   [...values].sort().forEach(v=>{
     const o = document.createElement('option');
@@ -181,17 +280,7 @@ function populateSelect(sel, values){
   });
 }
 
-function makeTable(tbodyId, rows, cols, renderRow, controls){
-  const tbody = document.querySelector(tbodyId);
-  function render(list){
-    tbody.innerHTML = list.map(renderRow).join('');
-  }
-  render(rows);
-  if (controls) controls(rows, render);
-  return render;
-}
-
-function setupFilterableTable(prefix, rows, cols, renderRow){
+function setupFilterableTable(prefix, rows, renderRow){
   const search = document.getElementById('search'+prefix);
   const catSel = document.getElementById('filterCat'+prefix);
   const teamSel = document.getElementById('filterTeam'+prefix);
@@ -221,7 +310,6 @@ function setupFilterableTable(prefix, rows, cols, renderRow){
   teamSel.addEventListener('change', apply);
   apply();
 
-  // sortable headers
   document.querySelectorAll(`#table${prefix} th[data-k]`).forEach(th=>{
     th.addEventListener('click', ()=>{
       const k = th.dataset.k;
@@ -237,20 +325,33 @@ function setupFilterableTable(prefix, rows, cols, renderRow){
   });
 }
 
+function relativeTime(iso){
+  const diffMs = Date.now() - new Date(iso).getTime();
+  const h = Math.floor(diffMs / 3600000);
+  if (h < 1) return 'less than an hour ago';
+  if (h === 1) return '1 hour ago';
+  if (h < 24) return `${h} hours ago`;
+  const d = Math.floor(h/24);
+  return d === 1 ? '1 day ago' : `${d} days ago`;
+}
+
 fetch('data/tracker.json?_=' + Date.now())
   .then(r=>r.json())
   .then(d=>{
-    document.getElementById('updated').textContent = new Date(d.generated_at).toLocaleString('en-GB', {dateStyle:'medium', timeStyle:'short'});
+    const dt = new Date(d.generated_at).toLocaleString('en-GB', {dateStyle:'medium', timeStyle:'short', timeZone:'UTC'});
+    document.getElementById('updated').textContent = `${dt} UTC (${relativeTime(d.generated_at)})`;
+
     buildLegend();
     drawMap(d.map_data);
+    buildDashboard('dash1', d.list1, LIST1_CATS);
+    buildDashboard('dash2', d.list2, LIST2_CATS);
 
-    setupFilterableTable('1', d.list1, [], r=>`<tr>
+    setupFilterableTable('1', d.list1, r=>`<tr>
       <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td>
-      <td>${esc(r.survey_type)}</td><td>${badge(r.category)}</td>
-      <td>${esc(r.team)}</td><td>${esc(r.person)}</td><td>${esc(r.crosscheck_note)}</td>
+      <td>${badge(r.category)}</td><td>${esc(r.team)}</td><td>${esc(r.crosscheck_note)}</td>
     </tr>`);
 
-    setupFilterableTable('2', d.list2, [], r=>`<tr>
+    setupFilterableTable('2', d.list2, r=>`<tr>
       <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td>
       <td>${esc(r.wave)}</td><td>${badge(r.category)}</td>
       <td>${esc(r.team)}</td><td>${esc(r.note)}</td>
