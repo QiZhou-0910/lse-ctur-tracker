@@ -62,6 +62,8 @@
   tbody tr:hover{background:rgba(127,127,127,.08);}
   .tablewrap{max-height:560px;overflow:auto;border:1px solid var(--border);border-radius:8px;}
   .badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600;color:#12151a;white-space:nowrap;}
+  .status-pill{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;font-weight:600;white-space:nowrap;}
+  .status-glyph{font-size:1rem;line-height:1;}
   .count{color:var(--muted);font-size:.82rem;margin-left:8px;font-weight:normal;}
   .muted{color:var(--muted);}
   footer{max-width:1200px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:.8rem;}
@@ -115,20 +117,20 @@
   <section class="tabpanel" id="tab-list1">
     <div class="panel">
       <h2>List 1 — Data In Hand <span class="count" id="count1"></span></h2>
-      <p class="desc">Every country-year survey the team already has some form of access to, and how far it has
-        progressed: whether it is fully harmonised ("Done"), being worked on, or sitting in the shared folder
-        waiting to be picked up. Individual researcher names are not shown here — only which team (LSE or CTUR)
-        is responsible.</p>
+      <p class="desc">Every country-year survey the team already has some form of access to. Progress is shown
+        separately for each team, so you can see at a glance which side (if either) is working on a given
+        survey and how far it has got. Individual researcher names are not shown — only team-level progress.</p>
+      <div class="legend" id="iconLegend" style="margin:0 0 14px;"></div>
       <div class="controls">
         <input type="text" id="search1" placeholder="Search country...">
-        <select id="filterCat1"><option value="">All statuses</option></select>
-        <select id="filterTeam1"><option value="">All teams</option></select>
+        <select id="filterCtur1"><option value="">CTUR: any status</option></select>
+        <select id="filterLse1"><option value="">LSE: any status</option></select>
       </div>
       <div class="tablewrap">
         <table id="table1">
           <thead><tr>
             <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
-            <th data-k="category">Status</th><th data-k="team">Team</th>
+            <th data-k="ctur_status">CTUR</th><th data-k="lse_status">LSE</th>
             <th data-k="crosscheck_note">Cross-check note</th>
           </tr></thead>
           <tbody></tbody>
@@ -207,6 +209,26 @@ function badge(cat){
   return `<span class="badge" style="background:${c}">${esc(cat||'')}</span>`;
 }
 
+// Four-state per-team status shown as an icon in List 1, replacing the old
+// single "Team" + "Status" columns.
+const STATUS_ICON = {
+  done:         { glyph: '✔', color: '#2e7d32', label: 'Done' },
+  in_progress:  { glyph: '◐', color: '#f2b705', label: 'In progress' },
+  assigned:     { glyph: '●', color: '#5b9bd5', label: 'Assigned' },
+  not_started:  { glyph: '○', color: '#bdbdbd', label: 'Not started yet' },
+};
+function statusIcon(status){
+  const s = STATUS_ICON[status] || STATUS_ICON.not_started;
+  return `<span class="status-pill" style="color:${s.color}" title="${s.label}">`
+       + `<span class="status-glyph">${s.glyph}</span>${s.label}</span>`;
+}
+function buildIconLegend(){
+  const el = document.getElementById('iconLegend');
+  el.innerHTML = Object.values(STATUS_ICON)
+    .map(s=>`<span><span class="status-glyph" style="color:${s.color}">${s.glyph}</span>${s.label}</span>`)
+    .join('');
+}
+
 // ---------------- Tabs ----------------
 document.querySelectorAll('.tab-btn').forEach(btn=>{
   btn.addEventListener('click', ()=>{
@@ -272,30 +294,31 @@ function buildDashboard(elId, rows, cats){
        </div>`;
 }
 
-function populateSelect(sel, values){
-  [...values].sort().forEach(v=>{
-    const o = document.createElement('option');
-    o.value = v; o.textContent = v;
-    sel.appendChild(o);
-  });
-}
-
-function setupFilterableTable(prefix, rows, renderRow){
+// filters: [{selectId, field, options?: [{value,label}]}] -- options are
+// derived from the data when not given explicitly.
+function setupFilterableTable(prefix, rows, renderRow, filters){
   const search = document.getElementById('search'+prefix);
-  const catSel = document.getElementById('filterCat'+prefix);
-  const teamSel = document.getElementById('filterTeam'+prefix);
   const tbody = document.querySelector('#table'+prefix+' tbody');
   const countEl = document.getElementById('count'+prefix);
 
-  populateSelect(catSel, new Set(rows.map(r=>r.category).filter(Boolean)));
-  populateSelect(teamSel, new Set(rows.map(r=>r.team).filter(Boolean)));
+  const selects = filters.map(f=>{
+    const sel = document.getElementById(f.selectId);
+    const opts = f.options || [...new Set(rows.map(r=>r[f.field]).filter(Boolean))].sort()
+      .map(v=>({value:v, label:v}));
+    opts.forEach(o=>{
+      const el = document.createElement('option');
+      el.value = o.value; el.textContent = o.label;
+      sel.appendChild(el);
+    });
+    return { sel, field: f.field };
+  });
 
   function apply(){
     const q = (search.value||'').toLowerCase();
-    const cat = catSel.value, team = teamSel.value;
     const filtered = rows.filter(r=>{
-      if (cat && r.category !== cat) return false;
-      if (team && r.team !== team) return false;
+      for (const {sel, field} of selects){
+        if (sel.value && r[field] !== sel.value) return false;
+      }
       if (q){
         const hay = JSON.stringify(r).toLowerCase();
         if (!hay.includes(q)) return false;
@@ -306,8 +329,7 @@ function setupFilterableTable(prefix, rows, renderRow){
     countEl.textContent = `(${filtered.length} of ${rows.length})`;
   }
   search.addEventListener('input', apply);
-  catSel.addEventListener('change', apply);
-  teamSel.addEventListener('change', apply);
+  selects.forEach(({sel})=>sel.addEventListener('change', apply));
   apply();
 
   document.querySelectorAll(`#table${prefix} th[data-k]`).forEach(th=>{
@@ -342,20 +364,29 @@ fetch('data/tracker.json?_=' + Date.now())
     document.getElementById('updated').textContent = `${dt} UTC (${relativeTime(d.generated_at)})`;
 
     buildLegend();
+    buildIconLegend();
     drawMap(d.map_data);
     buildDashboard('dash1', d.list1, LIST1_CATS);
     buildDashboard('dash2', d.list2, LIST2_CATS);
 
+    const statusOptions = Object.entries(STATUS_ICON).map(([k,v])=>({value:k, label:v.label}));
     setupFilterableTable('1', d.list1, r=>`<tr>
       <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td>
-      <td>${badge(r.category)}</td><td>${esc(r.team)}</td><td>${esc(r.crosscheck_note)}</td>
-    </tr>`);
+      <td>${statusIcon(r.ctur_status)}</td><td>${statusIcon(r.lse_status)}</td>
+      <td>${esc(r.crosscheck_note)}</td>
+    </tr>`, [
+      { selectId: 'filterCtur1', field: 'ctur_status', options: statusOptions },
+      { selectId: 'filterLse1', field: 'lse_status', options: statusOptions },
+    ]);
 
     setupFilterableTable('2', d.list2, r=>`<tr>
       <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td>
       <td>${esc(r.wave)}</td><td>${badge(r.category)}</td>
       <td>${esc(r.team)}</td><td>${esc(r.note)}</td>
-    </tr>`);
+    </tr>`, [
+      { selectId: 'filterCat2', field: 'category' },
+      { selectId: 'filterTeam2', field: 'team' },
+    ]);
 
     const tbody3 = document.querySelector('#table3 tbody');
     tbody3.innerHTML = d.unclear.map(r=>`<tr>

@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-09-11T20:02:40.484737+00:00",
+  "generated_at": "2026-09-11T21:45:14.601512+00:00",
   "list1": [
     {
       "country": "Albania",
       "code": "ALB",
       "year": 2010,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -16,7 +17,8 @@
       "code": "ARG",
       "year": 2013,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -26,7 +28,8 @@
       "code": "ARG",
       "year": 2021,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -36,7 +39,8 @@
       "code": "ARG",
       "year": 2016,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -46,7 +50,8 @@
       "code": "ARM",
       "year": 2008,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -56,7 +61,8 @@
       "code": "ARM",
       "year": 2022,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned/to check",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -66,7 +72,8 @@
       "code": "AUS",
       "year": 1974,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -76,7 +83,8 @@
       "code": "AUT",
       "year": 2008,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -86,7 +94,8 @@
       "code": "BGD",
       "year": 2018,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -96,7 +105,8 @@
       "code": "BGD",
       "year": 2019,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -106,7 +116,8 @@
       "code": "BGD",
       "year": 2021,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -116,7 +127,8 @@
       "code": "BEL",
       "year": 1999,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": null,
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -126,7 +138,8 @@
       "code": "BEL",
       "year": 2005,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": null,
       "crosscheck_note": null
@@ -136,7 +149,8 @@
       "code": "BEL",
       "year": 2013,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -146,7 +160,8 @@
       "code": "BEL",
       "year": 2013,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -156,7 +171,8 @@
       "code": "BEN",
       "year": 2015,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -166,7 +182,8 @@
       "code": "BRA",
       "year": 2017,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned/to check",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -176,7 +193,8 @@
       "code": "BGR",
       "year": 1965,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": null,
       "crosscheck_note": null
@@ -186,7 +204,8 @@
       "code": "BGR",
       "year": 1988,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": null,
       "crosscheck_note": null
@@ -196,7 +215,8 @@
       "code": "KHM",
       "year": 2019,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -206,7 +226,8 @@
       "code": "CAN",
       "year": 1981,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": null,
       "crosscheck_note": null
@@ -216,7 +237,8 @@
       "code": "CAN",
       "year": 1986,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -226,7 +248,8 @@
       "code": "CAN",
       "year": 1992,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -236,7 +259,8 @@
       "code": "CAN",
       "year": 1998,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -246,7 +270,8 @@
       "code": "CAN",
       "year": 2005,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -256,7 +281,8 @@
       "code": "CAN",
       "year": 2010,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -266,7 +292,8 @@
       "code": "CAN",
       "year": 2015,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -276,7 +303,8 @@
       "code": "CAN",
       "year": 2022,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -286,7 +314,8 @@
       "code": "CAN",
       "year": 2022,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "in progress",
       "source": null,
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -296,7 +325,8 @@
       "code": "CHL",
       "year": 2015,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -306,7 +336,8 @@
       "code": "CHL",
       "year": 2023,
       "category": "Allocated, not started",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "assigned",
       "source_phase": "data in dbox, not cleaned",
       "source": null,
       "crosscheck_note": null
@@ -316,7 +347,8 @@
       "code": "COL",
       "year": 2012,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -326,7 +358,8 @@
       "code": "COL",
       "year": 2016,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -336,7 +369,8 @@
       "code": "COL",
       "year": 2020,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -346,7 +380,8 @@
       "code": "CRI",
       "year": 2017,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -356,7 +391,8 @@
       "code": "CRI",
       "year": 2022,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -366,7 +402,8 @@
       "code": "DNK",
       "year": 2008,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -376,7 +413,8 @@
       "code": "DJI",
       "year": 2012,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -386,7 +424,8 @@
       "code": "DOM",
       "year": 2016,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -396,7 +435,8 @@
       "code": "ECU",
       "year": 2012,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -406,7 +446,8 @@
       "code": "EGY",
       "year": 2015,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -416,7 +457,8 @@
       "code": "SLV",
       "year": 2017,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -426,7 +468,8 @@
       "code": "ETH",
       "year": 2011,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -436,7 +479,8 @@
       "code": "ETH",
       "year": 2013,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -446,7 +490,8 @@
       "code": "ETH",
       "year": 2015,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -456,7 +501,8 @@
       "code": "ETH",
       "year": 2018,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -466,7 +512,8 @@
       "code": "ETH",
       "year": 2021,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -476,7 +523,8 @@
       "code": "FIN",
       "year": 1999,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "CTUR",
       "crosscheck_note": null
@@ -486,7 +534,8 @@
       "code": "FIN",
       "year": 2009,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -496,7 +545,8 @@
       "code": "FIN",
       "year": 2020,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "CTUR",
       "crosscheck_note": null
@@ -506,7 +556,8 @@
       "code": "FRA",
       "year": 1974,
       "category": "Being processed",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "in_progress",
       "source_phase": "cleaning in progress",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -516,7 +567,8 @@
       "code": "FRA",
       "year": 1985,
       "category": "Being processed",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "in_progress",
       "source_phase": "cleaning in progress",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -526,7 +578,8 @@
       "code": "FRA",
       "year": 1998,
       "category": "Being processed",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "in_progress",
       "source_phase": "cleaning in progress",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -536,7 +589,8 @@
       "code": "FRA",
       "year": 2009,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -546,7 +600,8 @@
       "code": "GEO",
       "year": 2020,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": null,
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -556,7 +611,8 @@
       "code": "DEU",
       "year": 1992,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": null
@@ -566,7 +622,8 @@
       "code": "GHA",
       "year": 1992,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -576,7 +633,8 @@
       "code": "GHA",
       "year": 1998,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -586,7 +644,8 @@
       "code": "GHA",
       "year": 2005,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -596,7 +655,8 @@
       "code": "GHA",
       "year": 2009,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'pending' -- verify against this row's phase."
@@ -606,7 +666,8 @@
       "code": "GRC",
       "year": 2013,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -616,7 +677,8 @@
       "code": "GRC",
       "year": 2013,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -626,7 +688,8 @@
       "code": "GTM",
       "year": 2000,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -636,7 +699,8 @@
       "code": "GTM",
       "year": 2014,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -646,7 +710,8 @@
       "code": "GTM",
       "year": 2017,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -656,7 +721,8 @@
       "code": "HUN",
       "year": 1965,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": null
@@ -666,7 +732,8 @@
       "code": "HUN",
       "year": 1977,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": null
@@ -676,7 +743,8 @@
       "code": "HUN",
       "year": 1986,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": null
@@ -686,7 +754,8 @@
       "code": "HUN",
       "year": 1993,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": null
@@ -696,7 +765,8 @@
       "code": "HUN",
       "year": 2000,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": null
@@ -706,7 +776,8 @@
       "code": "HUN",
       "year": 2009,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HETUS",
       "crosscheck_note": null
@@ -716,7 +787,8 @@
       "code": "HUN",
       "year": 2009,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -726,7 +798,8 @@
       "code": "IND",
       "year": 1998,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'in progress' -- verify against this row's phase."
@@ -736,7 +809,8 @@
       "code": "IND",
       "year": 2019,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'in progress' -- verify against this row's phase."
@@ -746,7 +820,8 @@
       "code": "IND",
       "year": 2024,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'in progress' -- verify against this row's phase."
@@ -756,7 +831,8 @@
       "code": "IRN",
       "year": 2009,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -766,7 +842,8 @@
       "code": "IRN",
       "year": 2014,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned/to check",
       "source": "HER",
       "crosscheck_note": null
@@ -776,7 +853,8 @@
       "code": "IRN",
       "year": 2020,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -786,7 +864,8 @@
       "code": "IRQ",
       "year": 2012,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -796,7 +875,8 @@
       "code": "ITA",
       "year": 2008,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -806,7 +886,8 @@
       "code": "ITA",
       "year": 2013,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -816,7 +897,8 @@
       "code": "KEN",
       "year": 2021,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -826,7 +908,8 @@
       "code": "KSV",
       "year": 2017,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -836,7 +919,8 @@
       "code": "LUX",
       "year": 2014,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "CTUR",
       "crosscheck_note": null
@@ -846,7 +930,8 @@
       "code": "MWI",
       "year": 2004,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -856,7 +941,8 @@
       "code": "MWI",
       "year": 2010,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -866,7 +952,8 @@
       "code": "MWI",
       "year": 2016,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -876,7 +963,8 @@
       "code": "MWI",
       "year": 2019,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -886,7 +974,8 @@
       "code": "MUS",
       "year": 2018,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "CTUR",
       "crosscheck_note": null
@@ -896,7 +985,8 @@
       "code": "MEX",
       "year": 2002,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -906,7 +996,8 @@
       "code": "MEX",
       "year": 2009,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -916,7 +1007,8 @@
       "code": "MEX",
       "year": 2014,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -926,7 +1018,8 @@
       "code": "MEX",
       "year": 2019,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -936,7 +1029,8 @@
       "code": "MNG",
       "year": 2011,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -946,7 +1040,8 @@
       "code": "MNG",
       "year": 2015,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -956,7 +1051,8 @@
       "code": "MNG",
       "year": 2015,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": null,
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -966,7 +1062,8 @@
       "code": "MNG",
       "year": 2019,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -976,7 +1073,8 @@
       "code": "MAR",
       "year": 2010,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -986,7 +1084,8 @@
       "code": "MAR",
       "year": 2012,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -996,7 +1095,8 @@
       "code": "NPL",
       "year": 2015,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1006,7 +1106,8 @@
       "code": "NLD",
       "year": 1975,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1016,7 +1117,8 @@
       "code": "NLD",
       "year": 1980,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1026,7 +1128,8 @@
       "code": "NLD",
       "year": 1985,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1036,7 +1139,8 @@
       "code": "NLD",
       "year": 1990,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1046,7 +1150,8 @@
       "code": "NLD",
       "year": 1995,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1056,7 +1161,8 @@
       "code": "NLD",
       "year": 2000,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1066,7 +1172,8 @@
       "code": "NLD",
       "year": 2005,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1076,7 +1183,8 @@
       "code": "NLD",
       "year": 2010,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -1086,7 +1194,8 @@
       "code": "NLD",
       "year": 2011,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1096,7 +1205,8 @@
       "code": "NLD",
       "year": 2016,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1106,7 +1216,8 @@
       "code": "NIC",
       "year": 1998,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1116,7 +1227,8 @@
       "code": "NGA",
       "year": 2003,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1126,7 +1238,8 @@
       "code": "NOR",
       "year": 2010,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -1136,7 +1249,8 @@
       "code": "PAK",
       "year": 2007,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1146,7 +1260,8 @@
       "code": "PSE",
       "year": 1999,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1156,7 +1271,8 @@
       "code": "PSE",
       "year": 2012,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1166,7 +1282,8 @@
       "code": "PRY",
       "year": 2016,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1176,7 +1293,8 @@
       "code": "PER",
       "year": 2010,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1186,7 +1304,8 @@
       "code": "POL",
       "year": 2013,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -1196,7 +1315,8 @@
       "code": "PRT",
       "year": 1999,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS",
       "crosscheck_note": null
@@ -1206,7 +1326,8 @@
       "code": "ROU",
       "year": 2011,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -1216,7 +1337,8 @@
       "code": "RUS",
       "year": "1994-2015",
       "category": "Being processed",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "in_progress",
       "source_phase": "cleaning in progress",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1226,7 +1348,8 @@
       "code": "RWA",
       "year": 2005,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1236,7 +1359,8 @@
       "code": "RWA",
       "year": 2010,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1246,7 +1370,8 @@
       "code": "SEN",
       "year": 2018,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1256,7 +1381,8 @@
       "code": "SEN",
       "year": 2021,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1266,7 +1392,8 @@
       "code": "SRB",
       "year": 2010,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HETUS-preharmonized",
       "crosscheck_note": null
@@ -1276,7 +1403,8 @@
       "code": "SLE",
       "year": 2003,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1286,7 +1414,8 @@
       "code": "ZAF",
       "year": 2000,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'pending' -- verify against this row's phase."
@@ -1296,7 +1425,8 @@
       "code": "ZAF",
       "year": 2010,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -1306,7 +1436,8 @@
       "code": "ESP",
       "year": 2002,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "CTUR",
       "crosscheck_note": null
@@ -1316,7 +1447,8 @@
       "code": "ESP",
       "year": 2009,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1326,7 +1458,8 @@
       "code": "ESP_basque",
       "year": 1993,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1336,7 +1469,8 @@
       "code": "ESP_basque",
       "year": 1998,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1346,7 +1480,8 @@
       "code": "ESP_basque",
       "year": 2003,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1356,7 +1491,8 @@
       "code": "ESP_basque",
       "year": 2008,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1366,7 +1502,8 @@
       "code": "ESP_basque",
       "year": 2013,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1376,7 +1513,8 @@
       "code": "ESP_basque",
       "year": 2018,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1386,7 +1524,8 @@
       "code": "ESP_basque",
       "year": 2023,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1396,7 +1535,8 @@
       "code": "ESP",
       "year": 2011,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1406,7 +1546,8 @@
       "code": "LKA",
       "year": 2017,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1416,7 +1557,8 @@
       "code": "SDN",
       "year": 2022,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1426,7 +1568,8 @@
       "code": "SDN_child",
       "year": 2022,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1436,7 +1579,8 @@
       "code": "SWE",
       "year": 1990,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data we have on server",
       "source": null,
       "crosscheck_note": null
@@ -1446,7 +1590,8 @@
       "code": "SWE",
       "year": 2001,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data we have on server",
       "source": "HETUS",
       "crosscheck_note": null
@@ -1456,7 +1601,8 @@
       "code": "SWE",
       "year": 2010,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data we have on server",
       "source": "HETUS",
       "crosscheck_note": null
@@ -1466,7 +1612,8 @@
       "code": "TZA",
       "year": 2006,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1476,7 +1623,8 @@
       "code": "TZA",
       "year": 2014,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1486,7 +1634,8 @@
       "code": "TZA",
       "year": 2018,
       "category": "Being processed",
-      "team": "CTUR",
+      "ctur_status": "in_progress",
+      "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1496,7 +1645,8 @@
       "code": "TZA",
       "year": 2020,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1506,7 +1656,8 @@
       "code": "TLS",
       "year": 2001,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1516,7 +1667,8 @@
       "code": "TLS",
       "year": 2007,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1526,7 +1678,8 @@
       "code": "TUN",
       "year": 2014,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER",
       "crosscheck_note": null
@@ -1536,7 +1689,8 @@
       "code": "UGA",
       "year": 2005,
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1546,7 +1700,8 @@
       "code": "UGA",
       "year": 2017,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase."
@@ -1556,7 +1711,8 @@
       "code": "GBR",
       "year": 2000,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1566,7 +1722,8 @@
       "code": "GBR",
       "year": 2014,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1576,7 +1733,8 @@
       "code": "GBR",
       "year": 2023,
       "category": "Allocated, not started",
-      "team": "CTUR",
+      "ctur_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1586,7 +1744,8 @@
       "code": "USA",
       "year": "1930-2003",
       "category": "Not allocated",
-      "team": null,
+      "ctur_status": "not_started",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": null,
       "crosscheck_note": null
@@ -1596,7 +1755,8 @@
       "code": "USA",
       "year": "2003-2023",
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1606,7 +1766,8 @@
       "code": "URY",
       "year": 2021,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null
@@ -1616,7 +1777,8 @@
       "code": "VNM",
       "year": 2022,
       "category": "Done",
-      "team": "LSE",
+      "ctur_status": "not_started",
+      "lse_status": "done",
       "source_phase": "cleaned",
       "source": "HER-CTUR",
       "crosscheck_note": null

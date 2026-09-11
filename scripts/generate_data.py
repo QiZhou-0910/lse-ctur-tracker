@@ -79,6 +79,19 @@ NOACCESS_PHASES = {"data we don't have", "MTUS, we don't have microdata",
                     "data we don't have, in Charmes (2026)"}
 JUANA_PHASE = 'data we will have through Juana'
 
+# Maps a row's overall category onto the four-state icon shown per team:
+# whichever team is actually responsible gets 'done' / 'in_progress' /
+# 'assigned'; the other team (and both, for unallocated rows) shows
+# 'not_started'. This replaces a single "Team: LSE/CTUR" + "Status: ..."
+# pair of columns with two per-team status columns, so the team a survey
+# is assigned to and its progress are shown in one place instead of two.
+CATEGORY_TO_STATUS = {
+    'Done': 'done',
+    'Being processed': 'in_progress',
+    'Allocated, not started': 'assigned',
+    'Not allocated': 'not_started',
+}
+
 list1 = []
 for r in mgmt_rows:
     phase = r['phase']
@@ -87,20 +100,29 @@ for r in mgmt_rows:
     key = (norm(r['country']), r['year'])
     tmatches = ctur_tracker.get(key, [])
     category = HAVE_PHASES[phase]
-    # Team (LSE/CTUR) is kept; individual researcher names are deliberately
-    # not surfaced on the public site.
+    # Team (LSE/CTUR) is kept internally to derive the two status columns;
+    # individual researcher names are deliberately not surfaced on the site.
     team = r['cleanby']
-    ctur_status = tmatches[0]['status'] if tmatches else None
+    ctur_tracker_status = tmatches[0]['status'] if tmatches else None
     if not team and tmatches and tmatches[0]['assigned']:
         team = 'CTUR'
     if category is None:
         category = 'Allocated, not started' if team else 'Not allocated'
     crosscheck = None
-    if ctur_status and norm(ctur_status) not in norm(phase):
-        crosscheck = f"CTUR Tracker shows status '{ctur_status}' -- verify against this row's phase."
+    if ctur_tracker_status and norm(ctur_tracker_status) not in norm(phase):
+        crosscheck = f"CTUR Tracker shows status '{ctur_tracker_status}' -- verify against this row's phase."
+
+    status = CATEGORY_TO_STATUS[category]
+    if team == 'LSE':
+        lse_status, ctur_status = status, 'not_started'
+    elif team == 'CTUR':
+        ctur_status, lse_status = status, 'not_started'
+    else:
+        ctur_status = lse_status = 'not_started'
+
     list1.append(dict(country=r['country'], code=r['code'], year=r['year'],
-                       category=category, team=team, source_phase=phase,
-                       source=r['source'], crosscheck_note=crosscheck))
+                       category=category, ctur_status=ctur_status, lse_status=lse_status,
+                       source_phase=phase, source=r['source'], crosscheck_note=crosscheck))
 
 # ================= LIST 2 =================
 list2 = []
