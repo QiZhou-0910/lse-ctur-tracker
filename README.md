@@ -8,9 +8,10 @@ progress of the MTUS+ project, split between the LSE and CTUR teams.
 ## What this is
 
 - `index.html` — the static site: an Overview tab with an interactive world map (Plotly
-  choropleth) and a summary dashboard, plus separate tabs for **List 1 — Data In Hand**,
-  **List 2 — Data Requests**, and **Unclear** (rows the source spreadsheets couldn't
-  resolve confidently).
+  choropleth) and a summary dashboard, plus separate tabs for **Data Harmonisation**
+  (survey data the team already has, `list1` in the data), **Data Acquisition** (survey
+  data still being requested, `list2` in the data), and **Unclear** (rows the source
+  spreadsheets couldn't resolve confidently).
 - `data/tracker.json` — the data behind the site. Regenerated periodically (see below)
   and read by the page at load time via `fetch()`; no rebuild step is needed after it
   changes.
@@ -59,7 +60,7 @@ git push
 The full logic lives in `scripts/generate_data.py`; this section explains it so the
 mapping from a spreadsheet cell to a category on the site is traceable.
 
-### List 1 — Data In Hand
+### Data Harmonisation tab (`list1`)
 
 Every row starts from the `phase` column of `data_management.xlsx`:
 
@@ -100,7 +101,7 @@ separate row shows CTUR's own "cleaning in progress"). These are merged into a s
 row per country-year, taking each team's *best* (most advanced) status across its
 duplicate rows, so the site never shows two rows for the same survey.
 
-### List 2 — Data Requests
+### Data Acquisition tab (`list2`)
 
 Every row starts from the same `phase` column, restricted to the "no access yet"
 values (`data we don't have`, `MTUS, we don't have microdata`,

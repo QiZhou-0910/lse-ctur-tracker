@@ -79,8 +79,8 @@
 
 <nav class="tabs">
   <button class="tab-btn active" data-tab="overview">Overview</button>
-  <button class="tab-btn" data-tab="list1">List 1 — Data In Hand</button>
-  <button class="tab-btn" data-tab="list2">List 2 — Data Requests</button>
+  <button class="tab-btn" data-tab="list1">Data Harmonisation</button>
+  <button class="tab-btn" data-tab="list2">Data Acquisition</button>
   <button class="tab-btn" data-tab="unclear">Unclear</button>
 </nav>
 
@@ -92,8 +92,8 @@
       <h2>Overview</h2>
       <p class="desc">A snapshot of where the MTUS+ harmonisation stands right now: the map shows each country's
         best current status across every survey year it has, and the two panels below summarise how many
-        country-year surveys sit in each stage of List 1 (data already in hand) and List 2 (data still being
-        requested).</p>
+        country-year surveys sit in each stage of Data Harmonisation (data already in hand) and Data
+        Acquisition (data still being requested).</p>
       <div id="map"></div>
       <div class="legend" id="legend"></div>
     </div>
@@ -102,11 +102,11 @@
       <h2>Summary dashboard</h2>
       <div class="dash-cols">
         <div>
-          <h3>List 1 — Data In Hand</h3>
+          <h3>Data Harmonisation</h3>
           <div class="stat-grid" id="dash1"></div>
         </div>
         <div>
-          <h3>List 2 — Data Requests</h3>
+          <h3>Data Acquisition</h3>
           <div class="stat-grid" id="dash2"></div>
         </div>
       </div>
@@ -116,7 +116,7 @@
   <!-- ===================== LIST 1 ===================== -->
   <section class="tabpanel" id="tab-list1">
     <div class="panel">
-      <h2>List 1 — Data In Hand <span class="count" id="count1"></span></h2>
+      <h2>Data Harmonisation <span class="count" id="count1"></span></h2>
       <p class="desc">Every country-year survey the team already has some form of access to. Progress is shown
         separately for each team, so you can see at a glance which side (if either) is working on a given
         survey and how far it has got. Individual researcher names are not shown — only team-level progress.</p>
@@ -142,7 +142,7 @@
   <!-- ===================== LIST 2 ===================== -->
   <section class="tabpanel" id="tab-list2">
     <div class="panel">
-      <h2>List 2 — Data Requests <span class="count" id="count2"></span></h2>
+      <h2>Data Acquisition <span class="count" id="count2"></span></h2>
       <p class="desc">Every country-year survey the team does not yet have access to, and what has (or hasn't)
         been done to try to obtain it — from no outreach at all, through to a request that's been sent and is
         awaiting a reply, to data that has reportedly arrived but isn't logged as received yet.</p>
@@ -209,8 +209,8 @@ function badge(cat){
   return `<span class="badge" style="background:${c}">${esc(cat||'')}</span>`;
 }
 
-// Four-state per-team status shown as an icon in List 1, replacing the old
-// single "Team" + "Status" columns.
+// Four-state per-team status shown as an icon on the Data Harmonisation tab,
+// replacing the old single "Team" + "Status" columns.
 const STATUS_ICON = {
   done:         { glyph: '✔', color: '#2e7d32', label: 'Done' },
   in_progress:  { glyph: '◐', color: '#f2b705', label: 'In progress' },
