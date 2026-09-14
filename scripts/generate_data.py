@@ -65,6 +65,14 @@ for row in ws_m.iter_rows(min_row=2, values_only=True):
                            wholeaned=wholeaned, cleanby=cleanby, whocontact=whocontact,
                            notes=notes, why=why, source=source))
 
+ws_p = load_workbook_resilient(BASE / "data_cleaning" / "cleaning_priority.xlsx", "Sheet1")
+priority_set = set()
+for row in ws_p.iter_rows(min_row=3, values_only=True):
+    _, country, code, year = row
+    if country is None:
+        continue
+    priority_set.add((norm(country), year))
+
 # ================= LIST 1 =================
 HAVE_PHASES = {
     'cleaned': 'Done',
@@ -203,6 +211,22 @@ def merge_duplicate_country_years(rows):
 
 
 list1 = merge_duplicate_country_years(list1)
+
+# cleaning_priority.xlsx (data_cleaning/) flags specific country-years the
+# team wants prioritised for cleaning. It only makes sense against surveys
+# we actually hold, so it's applied to List 1 only; entries that don't match
+# any List 1 row (e.g. because the survey turned out not to be acquired yet)
+# are reported, not silently added.
+matched_priority_keys = set()
+for r in list1:
+    key = (norm(r['country']), r['year'])
+    r['priority'] = key in priority_set
+    if r['priority']:
+        matched_priority_keys.add(key)
+unmatched_priority = sorted(priority_set - matched_priority_keys)
+if unmatched_priority:
+    print(f"WARNING: {len(unmatched_priority)} cleaning_priority.xlsx entries do not match any "
+          f"List 1 row (survey not currently marked as in-hand): {unmatched_priority}")
 
 # ================= LIST 2 =================
 list2 = []

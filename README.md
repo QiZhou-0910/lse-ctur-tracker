@@ -36,6 +36,7 @@ is published here):
 | `nso_contact_tracking.xlsx` | LSE | Outreach log: mail dates and reply status for specific National Statistics Office contacts. |
 | `MTUS_tracker.xlsx` ("Tracker" sheet) | CTUR | CTUR's own country-year harmonisation tracker — assignee and status, cross-checked against `data_management.xlsx`. |
 | `MTUS_tracker.xlsx` ("Calendar" sheet) | CTUR | CTUR's weekly work-planning calendar, colour-coded by status (Done / Ongoing / Needs Peer Check / Interrupted). Used only as a source of individually team-confirmed status corrections for specific rows — see `CALENDAR_OVERRIDE` below. |
+| `data_cleaning/cleaning_priority.xlsx` | LSE/CTUR shared | A flat list of country-years the team wants cleaned first. Populates the **Priority** column on the Data Harmonisation tab. |
 
 ## Why the update runs locally, not as a GitHub Action
 
@@ -136,6 +137,14 @@ country-year twice — once from each team (e.g. LSE marks a survey "cleaned" wh
 separate row shows CTUR's own "cleaning in progress"). These are merged into a single
 row per country-year, taking each team's *best* (most advanced) status across its
 duplicate rows, so the site never shows two rows for the same survey.
+
+**Priority flag:** every country-year listed in `data_cleaning/cleaning_priority.xlsx`
+is marked `priority: true` and shown with a "★ Priority" badge. Since a survey can only
+be prioritised for cleaning once it's actually been acquired, this is only ever applied
+to rows already on the Data Harmonisation tab — an entry in that file that doesn't match
+any List 1 row (e.g. the survey turned out not to be held yet) is skipped rather than
+added as a new row, and logged as a console warning by `generate_data.py` for the team
+to check.
 
 ### Data Acquisition tab (`list2`)
 

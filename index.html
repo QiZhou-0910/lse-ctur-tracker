@@ -64,6 +64,8 @@
     padding:7px 10px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);font-size:.85rem;
   }
   .controls input{flex:1;min-width:180px;}
+  .checkbox-filter{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--muted);white-space:nowrap;}
+  .priority-badge{display:inline-flex;align-items:center;gap:4px;font-size:.8rem;font-weight:600;color:#b8860b;white-space:nowrap;}
   table{width:100%;border-collapse:collapse;font-size:.82rem;}
   th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--border);vertical-align:top;}
   th{position:sticky;top:0;background:var(--panel);cursor:pointer;white-space:nowrap;color:var(--muted);font-weight:600;}
@@ -131,17 +133,20 @@
       <h2>Data Harmonisation <span class="count" id="count1"></span></h2>
       <p class="desc">Every country-year survey the team already has some form of access to. Progress is shown
         separately for each team, so you can see at a glance which side (if either) is working on a given
-        survey and how far it has got. Individual researcher names are not shown — only team-level progress.</p>
+        survey and how far it has got. Individual researcher names are not shown — only team-level progress.
+        The Priority column flags surveys the team has asked to have cleaned first.</p>
       <div class="legend" id="iconLegend" style="margin:0 0 14px;"></div>
       <div class="controls">
         <input type="text" id="search1" placeholder="Search country...">
         <select id="filterCtur1"><option value="">CTUR: any status</option></select>
         <select id="filterLse1"><option value="">LSE: any status</option></select>
+        <label class="checkbox-filter"><input type="checkbox" id="filterPriority1"> Priority only</label>
       </div>
       <div class="tablewrap">
         <table id="table1">
           <thead><tr>
             <th data-k="country">Country</th><th data-k="code">ISO3</th><th data-k="year">Year</th>
+            <th data-k="priority">Priority</th>
             <th data-k="ctur_status">CTUR</th><th data-k="lse_status">LSE</th>
             <th data-k="crosscheck_note">Cross-check note</th>
           </tr></thead>
@@ -238,7 +243,10 @@ function buildIconLegend(){
   const el = document.getElementById('iconLegend');
   el.innerHTML = Object.values(STATUS_ICON)
     .map(s=>`<span><span class="status-glyph" style="color:${s.color}">${s.glyph}</span>${s.label}</span>`)
-    .join('');
+    .join('') + `<span><span class="status-glyph">&#9733;</span>Priority (flagged for cleaning first)</span>`;
+}
+function priorityBadge(isPriority){
+  return isPriority ? `<span class="priority-badge" title="Flagged as a cleaning priority">&#9733; Priority</span>` : '';
 }
 
 // ---------------- Tabs ----------------
@@ -306,30 +314,37 @@ function buildDashboard(elId, rows, cats){
        </div>`;
 }
 
-// filters: [{selectId, field, options?: [{value,label}]}] -- options are
-// derived from the data when not given explicitly.
+// filters: [{selectId, field, options?: [{value,label}]}] for a <select>, or
+// [{selectId, field, checkbox:true}] for a checkbox that shows only truthy
+// rows when checked. Select options are derived from the data when not
+// given explicitly.
 function setupFilterableTable(prefix, rows, renderRow, filters){
   const search = document.getElementById('search'+prefix);
   const tbody = document.querySelector('#table'+prefix+' tbody');
   const countEl = document.getElementById('count'+prefix);
 
-  const selects = filters.map(f=>{
-    const sel = document.getElementById(f.selectId);
+  const controls = filters.map(f=>{
+    const el = document.getElementById(f.selectId);
+    if (f.checkbox) return { el, field: f.field, checkbox: true };
     const opts = f.options || [...new Set(rows.map(r=>r[f.field]).filter(Boolean))].sort()
       .map(v=>({value:v, label:v}));
     opts.forEach(o=>{
-      const el = document.createElement('option');
-      el.value = o.value; el.textContent = o.label;
-      sel.appendChild(el);
+      const opt = document.createElement('option');
+      opt.value = o.value; opt.textContent = o.label;
+      el.appendChild(opt);
     });
-    return { sel, field: f.field };
+    return { el, field: f.field, checkbox: false };
   });
 
   function apply(){
     const q = (search.value||'').toLowerCase();
     const filtered = rows.filter(r=>{
-      for (const {sel, field} of selects){
-        if (sel.value && r[field] !== sel.value) return false;
+      for (const c of controls){
+        if (c.checkbox) {
+          if (c.el.checked && !r[c.field]) return false;
+        } else if (c.el.value && r[c.field] !== c.el.value) {
+          return false;
+        }
       }
       if (q){
         const hay = JSON.stringify(r).toLowerCase();
@@ -341,7 +356,7 @@ function setupFilterableTable(prefix, rows, renderRow, filters){
     countEl.textContent = `(${filtered.length} of ${rows.length})`;
   }
   search.addEventListener('input', apply);
-  selects.forEach(({sel})=>sel.addEventListener('change', apply));
+  controls.forEach(({el, checkbox})=>el.addEventListener(checkbox ? 'change' : 'change', apply));
   apply();
 
   document.querySelectorAll(`#table${prefix} th[data-k]`).forEach(th=>{
@@ -385,11 +400,13 @@ function loadData(){
     const statusOptions = Object.entries(STATUS_ICON).map(([k,v])=>({value:k, label:v.label}));
     setupFilterableTable('1', d.list1, r=>`<tr>
       <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td>
+      <td>${priorityBadge(r.priority)}</td>
       <td>${statusIcon(r.ctur_status)}</td><td>${statusIcon(r.lse_status)}</td>
       <td>${esc(r.crosscheck_note)}</td>
     </tr>`, [
       { selectId: 'filterCtur1', field: 'ctur_status', options: statusOptions },
       { selectId: 'filterLse1', field: 'lse_status', options: statusOptions },
+      { selectId: 'filterPriority1', field: 'priority', checkbox: true },
     ]);
 
     setupFilterableTable('2', d.list2, r=>`<tr>
