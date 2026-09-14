@@ -18,7 +18,10 @@ progress of the MTUS+ project, split between the LSE and CTUR teams.
 - `scripts/generate_data.py` — reads the team's live tracking spreadsheets and rewrites
   `data/tracker.json`, applying the categorisation rules described below.
 - `scripts/update_and_push.ps1` — wrapper that runs the generator and, if the data
-  actually changed, commits and pushes it.
+  actually changed, commits and pushes it. Run automatically every 12 hours.
+- `scripts/update_server.py` — a local-only listener behind the page's **Update data
+  now** button, so an update can also be triggered on demand instead of waiting up to
+  12 hours. See "Manual updates" below.
 
 ## Source spreadsheets
 
@@ -53,6 +56,39 @@ py -3 scripts/generate_data.py
 git add data/tracker.json
 git commit -m "Update tracker data"
 git push
+```
+
+## Manual updates: the "Update data now" button
+
+The site has a button, next to the "Data last updated" badge, that regenerates and
+pushes the data on demand instead of waiting for the 12-hourly task. A public static
+page can't launch a script on your machine by itself, so this works via a small
+local-only listener:
+
+- `scripts/update_server.py` binds to `127.0.0.1:8930` — reachable only from a browser
+  running on the same machine, never from the network or the internet.
+- It only answers requests whose page origin is in its `ALLOWED_ORIGINS` allow-list
+  (the live site, plus `localhost` for local testing). Every other page's JavaScript is
+  blocked by the browser itself before the request is even sent, because the POST body
+  is JSON and always triggers a CORS preflight — there's no way around that check.
+- It must be running for the button to work. On this machine it's started
+  automatically at every login via a script in the Windows Startup folder
+  (`shell:startup`) — `LSE-CTUR-Tracker-UpdateServer.vbs` — since this machine's Task
+  Scheduler policy blocks ordinary (non-admin) logon-triggered tasks. To start it by
+  hand: `pythonw scripts/update_server.py`.
+- From any other machine (or if the listener isn't running), the button explains that
+  it can't reach the local updater rather than failing silently.
+
+**Git identity note:** whichever `gh` account is "active" on this machine at any given
+moment can drift (e.g. switched for other projects), which would silently break both
+the scheduled task's and this button's `git push`. To avoid that, this repo's `origin`
+remote is pinned to always authenticate as the `QiZhou-0910` account regardless of the
+machine's active `gh` account, via a repo-local credential helper:
+
+```bash
+git config --local credential.https://github.com.helper ""
+git config --local --add credential.https://github.com.helper \
+  '!f() { echo username=x-access-token; echo "password=$(gh auth token -u QiZhou-0910)"; }; f'
 ```
 
 ## Categorisation rules

@@ -20,8 +20,16 @@
   header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--panel);}
   header h1{margin:0 0 4px;font-size:1.5rem;}
   header p{margin:0;color:var(--muted);font-size:.9rem;}
-  #updated-badge{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:4px 10px;border-radius:14px;background:var(--bg);border:1px solid var(--border);font-size:.78rem;color:var(--muted);}
+  #updated-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:14px;background:var(--bg);border:1px solid var(--border);font-size:.78rem;color:var(--muted);}
   #updated-badge b{color:var(--text);font-weight:600;}
+  .update-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:8px;}
+  .update-btn{
+    appearance:none;border:1px solid var(--accent);background:var(--accent);color:#fff;
+    padding:5px 12px;border-radius:14px;font-size:.78rem;font-family:inherit;font-weight:600;cursor:pointer;
+  }
+  .update-btn:hover{opacity:.9;}
+  .update-btn:disabled{opacity:.5;cursor:default;}
+  .update-status{font-size:.78rem;color:var(--muted);max-width:60ch;}
 
   nav.tabs{display:flex;gap:4px;padding:0 28px;background:var(--panel);border-bottom:1px solid var(--border);overflow-x:auto;}
   nav.tabs button{
@@ -74,7 +82,11 @@
 <header>
   <h1>MTUS+ Project: UCL_LSE Coordination Tracker</h1>
   <p>Country-year harmonisation and data-request progress for the MTUS+ project.</p>
-  <div id="updated-badge">&#8635; Data last updated: <b id="updated">loading...</b></div>
+  <div class="update-row">
+    <div id="updated-badge">&#8635; Data last updated: <b id="updated">loading...</b></div>
+    <button id="updateNowBtn" class="update-btn">&#8635; Update data now</button>
+    <span id="updateStatus" class="update-status"></span>
+  </div>
 </header>
 
 <nav class="tabs">
@@ -357,7 +369,8 @@ function relativeTime(iso){
   return d === 1 ? '1 day ago' : `${d} days ago`;
 }
 
-fetch('data/tracker.json?_=' + Date.now())
+function loadData(){
+  return fetch('data/tracker.json?_=' + Date.now())
   .then(r=>r.json())
   .then(d=>{
     const dt = new Date(d.generated_at).toLocaleString('en-GB', {dateStyle:'medium', timeStyle:'short', timeZone:'UTC'});
@@ -393,11 +406,65 @@ fetch('data/tracker.json?_=' + Date.now())
       <td>${esc(r.country)}</td><td>${esc(r.code)}</td><td>${esc(r.year)}</td><td>${esc(r.issue)}</td>
     </tr>`).join('');
     document.getElementById('count3').textContent = `(${d.unclear.length})`;
+    return d;
   })
   .catch(err=>{
     document.getElementById('updated').textContent = 'failed to load data.json';
     console.error(err);
   });
+}
+loadData();
+
+// ---------------- Manual "Update data now" button ----------------
+// Calls a local-only listener (see scripts/update_server.py) that regenerates
+// data/tracker.json from the live spreadsheets and pushes it. Only works when
+// this page is being browsed from the machine that runs that listener (it
+// binds to 127.0.0.1 and only answers this site's origin) -- from anywhere
+// else the request simply can't reach it, which the button explains.
+const UPDATE_SERVER = 'http://127.0.0.1:8930';
+const updateBtn = document.getElementById('updateNowBtn');
+const updateStatus = document.getElementById('updateStatus');
+
+function setUpdateStatus(text, tone){
+  updateStatus.textContent = text;
+  updateStatus.style.color = tone === 'error' ? '#c0392b' : tone === 'ok' ? '#2e7d32' : 'var(--muted)';
+}
+
+function fetchWithTimeout(url, opts, ms){
+  const ctrl = new AbortController();
+  const t = setTimeout(()=>ctrl.abort(), ms);
+  return fetch(url, {...opts, signal: ctrl.signal}).finally(()=>clearTimeout(t));
+}
+
+updateBtn.addEventListener('click', async ()=>{
+  updateBtn.disabled = true;
+  setUpdateStatus('Contacting local updater...', null);
+  try {
+    const res = await fetchWithTimeout(`${UPDATE_SERVER}/update`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+    }, 45000);
+    const body = await res.json().catch(()=>({status:'error', message:'Bad response from local updater.'}));
+    if (body.status === 'updated') {
+      setUpdateStatus('Updated -- refreshing page data...', 'ok');
+      await loadData();
+      setUpdateStatus('Data refreshed just now.', 'ok');
+    } else if (body.status === 'unchanged') {
+      setUpdateStatus('Checked -- already up to date.', 'ok');
+    } else if (body.status === 'busy') {
+      setUpdateStatus('An update is already running -- try again shortly.', null);
+    } else {
+      setUpdateStatus(`Update failed: ${body.message || 'unknown error'}`, 'error');
+    }
+  } catch (err) {
+    setUpdateStatus(
+      "Couldn't reach the local updater. This button only works when browsing from the machine " +
+      "that has access to the source spreadsheets and is running scripts/update_server.py (see README).",
+      'error'
+    );
+  } finally {
+    updateBtn.disabled = false;
+  }
+});
 </script>
 </body>
 </html>
