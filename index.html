@@ -267,7 +267,23 @@ function buildLegend(){
   el.innerHTML = RANK_ORDER.map(c=>`<span><span class="swatch" style="background:${CAT_COLOR[c]}"></span>${c}</span>`).join('');
 }
 
-function drawMap(mapData){
+// Custom basemap (data/world-110m.geojson, derived from Natural Earth 1:110m)
+// instead of Plotly's built-in `locationmode: 'ISO-3'` world map. Two fixes
+// that basemap doesn't reflect: Crimea is shown as part of Ukraine, not
+// Russia, per UN GA Res 68/262's non-recognition of the 2014 annexation
+// (upstream Natural Earth data placed it under Russia); and Taiwan is
+// coloured to match China's status (see MAP_MERGE_GROUPS in generate_data.py)
+// so the two read as one entity on the map, while List 1/2 still track them
+// as separate surveys. Features are matched on `properties.MAP_KEY`, a
+// cleaned-up country code baked into that file (plain ISO_A3 has gaps --
+// e.g. Norway/France are "-99" in the raw Natural Earth data).
+let worldGeoJSON = null;
+function getWorldGeoJSON(){
+  if (worldGeoJSON) return Promise.resolve(worldGeoJSON);
+  return fetch('data/world-110m.geojson').then(r=>r.json()).then(gj => (worldGeoJSON = gj));
+}
+
+function drawMap(mapData, geojson){
   const codes = mapData.map(d=>d.code);
   const ranks = mapData.map(d=>d.rank);
   const text = mapData.map(d=>`${d.country}<br>${d.category}`);
@@ -280,7 +296,8 @@ function drawMap(mapData){
   });
   const data = [{
     type: 'choropleth',
-    locationmode: 'ISO-3',
+    geojson: geojson,
+    featureidkey: 'properties.MAP_KEY',
     locations: codes,
     z: ranks,
     text: text,
@@ -291,7 +308,8 @@ function drawMap(mapData){
     marker: { line: { color: 'rgba(120,120,120,0.4)', width: 0.5 } },
   }];
   const layout = {
-    geo: { showframe:false, showcoastlines:false, projection:{type:'natural earth'}, bgcolor:'rgba(0,0,0,0)' },
+    geo: { showframe:false, showcoastlines:false, projection:{type:'natural earth'}, bgcolor:'rgba(0,0,0,0)',
+           fitbounds: 'geojson' },
     margin: { l:0, r:0, t:0, b:0 },
     paper_bgcolor: 'rgba(0,0,0,0)',
     font: { family: 'Arial' },
@@ -385,15 +403,17 @@ function relativeTime(iso){
 }
 
 function loadData(){
-  return fetch('data/tracker.json?_=' + Date.now())
-  .then(r=>r.json())
-  .then(d=>{
+  return Promise.all([
+    fetch('data/tracker.json?_=' + Date.now()).then(r=>r.json()),
+    getWorldGeoJSON(),
+  ])
+  .then(([d, geojson])=>{
     const dt = new Date(d.generated_at).toLocaleString('en-GB', {dateStyle:'medium', timeStyle:'short', timeZone:'UTC'});
     document.getElementById('updated').textContent = `${dt} UTC (${relativeTime(d.generated_at)})`;
 
     buildLegend();
     buildIconLegend();
-    drawMap(d.map_data);
+    drawMap(d.map_data, geojson);
     buildDashboard('dash1', d.list1, LIST1_CATS);
     buildDashboard('dash2', d.list2, LIST2_CATS);
 

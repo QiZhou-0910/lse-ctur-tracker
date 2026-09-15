@@ -346,6 +346,21 @@ for r in list1 + list2:
     if cur is None or rank < cur['rank']:
         country_best[code] = dict(code=code, country=r['country'], category=r['category'], rank=rank)
 
+# On the map only (not in the List 1/2 tables, which keep them as distinct
+# surveys), Taiwan is shown as part of China: both map features are coloured
+# by whichever of the two has the more advanced status. Each keeps its own
+# name/code for hover text -- only the colour (category/rank) is shared.
+MAP_MERGE_GROUPS = [('TWN', 'CHN')]
+for code_a, code_b in MAP_MERGE_GROUPS:
+    a, b = country_best.get(code_a), country_best.get(code_b)
+    candidates = [x for x in (a, b) if x]
+    if not candidates:
+        continue
+    best = min(candidates, key=lambda x: x['rank'])
+    for code, existing in ((code_a, a), (code_b, b)):
+        base = existing or dict(code=code, country=code, category=best['category'], rank=best['rank'])
+        country_best[code] = dict(base, category=best['category'], rank=best['rank'])
+
 map_data = sorted(country_best.values(), key=lambda x: x['country'] or '')
 
 payload = dict(
