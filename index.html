@@ -217,6 +217,10 @@ const CAT_COLOR = {
 const RANK_ORDER = ['Done','Being processed','Allocated, not started','Not allocated',
   'Data received, not yet in shared folder','Dataset agreed, not received',
   'Request sent, still in discussion','Request sent, no response yet','Request not sent yet'];
+// Distinct from every status colour above (including the two greys) so a
+// country with no data at all reads differently from "Not allocated" or
+// "Request not sent yet", rather than blending into either.
+const NOT_TRACKED_COLOR = '#eceff1';
 const LIST1_CATS = RANK_ORDER.slice(0,4);
 const LIST2_CATS = RANK_ORDER.slice(4);
 
@@ -264,7 +268,8 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
 
 function buildLegend(){
   const el = document.getElementById('legend');
-  el.innerHTML = RANK_ORDER.map(c=>`<span><span class="swatch" style="background:${CAT_COLOR[c]}"></span>${c}</span>`).join('');
+  el.innerHTML = RANK_ORDER.map(c=>`<span><span class="swatch" style="background:${CAT_COLOR[c]}"></span>${c}</span>`).join('')
+    + `<span><span class="swatch" style="background:${NOT_TRACKED_COLOR};border:1px solid var(--border)"></span>Not tracked in this project</span>`;
 }
 
 // Custom basemap (data/world-110m.geojson, derived from Natural Earth 1:110m)
@@ -308,8 +313,16 @@ function drawMap(mapData, geojson){
     marker: { line: { color: 'rgba(120,120,120,0.4)', width: 0.5 } },
   }];
   const layout = {
-    geo: { showframe:false, showcoastlines:false, projection:{type:'natural earth'}, bgcolor:'rgba(0,0,0,0)',
-           fitbounds: 'geojson' },
+    geo: {
+      showframe:false, showcoastlines:false,
+      // Plotly defaults to showland:false, so any country with no matching
+      // `locations` entry gets no fill at all -- invisible against the page
+      // background rather than a visible "not tracked" shade.
+      showland:true, landcolor: NOT_TRACKED_COLOR,
+      showcountries:true, countrycolor:'rgba(110,110,110,0.35)',
+      projection:{type:'natural earth'}, bgcolor:'rgba(0,0,0,0)',
+      fitbounds: 'geojson',
+    },
     margin: { l:0, r:0, t:0, b:0 },
     paper_bgcolor: 'rgba(0,0,0,0)',
     font: { family: 'Arial' },
