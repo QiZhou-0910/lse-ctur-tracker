@@ -134,6 +134,13 @@ one row (e.g. LSE already finished a survey that CTUR is now separately re-check
 Only rows the team has actually confirmed are listed there; every other colour on the
 Calendar tab is left alone.
 
+**Team-confirmed corrections:** a second dictionary, `TEAM_CONFIRMED_OVERRIDE`, holds
+corrections given directly by the team rather than read off a specific spreadsheet cell
+— e.g. a `clean by` tag that turned out to be stale because no one has actually picked
+the survey up. Applied the same way as `CALENDAR_OVERRIDE`, with a note citing the date
+and what was checked before applying it (the other sources are checked first; the
+override is only added when nothing else corroborates or contradicts it).
+
 **Duplicate country-years:** `data_management.xlsx` occasionally logs the same
 country-year twice — once from each team (e.g. LSE marks a survey "cleaned" while a
 separate row shows CTUR's own "cleaning in progress"). These are merged into a single

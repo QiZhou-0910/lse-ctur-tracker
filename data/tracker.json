@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T07:20:38.510906+00:00",
+  "generated_at": "2026-09-16T12:39:46.378433+00:00",
   "list1": [
     {
       "country": "Albania",
@@ -341,12 +341,12 @@
       "country": "Chile",
       "code": "CHL",
       "year": 2023,
-      "category": "Allocated, not started",
+      "category": "Not allocated",
       "ctur_status": "not_started",
-      "lse_status": "assigned",
+      "lse_status": "not_started",
       "source_phase": "data in dbox, not cleaned",
       "source": null,
-      "crosscheck_note": null,
+      "crosscheck_note": "Team-confirmed 2026-09-16: not actually assigned yet, despite data_management.xlsx's 'clean by: LSE' tag (no person is named there, and no other source -- CTUR Tracker/Calendar, data_acquisition.xlsx -- mentions this survey).",
       "priority": false
     },
     {

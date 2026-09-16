@@ -124,6 +124,17 @@ CALENDAR_OVERRIDE = {
         note="Calendar tab (MTUS_tracker.xlsx): CTUR (Qi) has started active work on this survey, ahead of the master tracker's 'not cleaned' phase."),
 }
 
+# Corrections confirmed directly by the team, not tied to a specific
+# spreadsheet cell -- e.g. a "clean by" tag that's stale because no one has
+# actually picked the survey up yet, contradicted by nothing else in
+# data_management.xlsx, MTUS_tracker.xlsx, or data_acquisition.xlsx.
+TEAM_CONFIRMED_OVERRIDE = {
+    (norm('Chile'), 2023): dict(
+        lse_status='not_started',
+        note="Team-confirmed 2026-09-16: not actually assigned yet, despite data_management.xlsx's 'clean by: LSE' tag "
+             "(no person is named there, and no other source -- CTUR Tracker/Calendar, data_acquisition.xlsx -- mentions this survey)."),
+}
+
 list1 = []
 for r in mgmt_rows:
     phase = r['phase']
@@ -152,16 +163,18 @@ for r in mgmt_rows:
     else:
         ctur_status = lse_status = 'not_started'
 
-    cal = CALENDAR_OVERRIDE.get((norm(r['country']), r['year']))
-    if cal:
-        if 'ctur_status' in cal:
-            ctur_status = cal['ctur_status']
-        if 'lse_status' in cal:
-            lse_status = cal['lse_status']
-        crosscheck = cal['note'] if not crosscheck else f"{crosscheck} | {cal['note']}"
+    for override_source in (CALENDAR_OVERRIDE, TEAM_CONFIRMED_OVERRIDE):
+        ov = override_source.get((norm(r['country']), r['year']))
+        if not ov:
+            continue
+        if 'ctur_status' in ov:
+            ctur_status = ov['ctur_status']
+        if 'lse_status' in ov:
+            lse_status = ov['lse_status']
+        crosscheck = ov['note'] if not crosscheck else f"{crosscheck} | {ov['note']}"
         # The row's overall category (used by the map and the Overview
         # dashboard) follows whichever of the two team statuses is furthest
-        # along, so a Calendar-tab correction is reflected there too.
+        # along, so an override is reflected there too.
         category = STATUS_TO_CATEGORY[min(ctur_status, lse_status, key=STATUS_RANK.get)]
 
     list1.append(dict(country=r['country'], code=r['code'], year=r['year'],
