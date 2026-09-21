@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T19:20:38.686197+00:00",
+  "generated_at": "2026-09-21T07:20:37.845666+00:00",
   "list1": [
     {
       "country": "Albania",
@@ -958,7 +958,7 @@
       "lse_status": "not_started",
       "source_phase": "cleaning in progress/ctur",
       "source": "CTUR",
-      "crosscheck_note": null,
+      "crosscheck_note": "CTUR Tracker shows status 'needs checking' -- verify against this row's phase.",
       "priority": false
     },
     {
